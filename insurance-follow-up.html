@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Duly Consolidated Process">
+	<meta name="author" content="AdminKit">
+	<meta name="keywords" content="adminkit, bootstrap, bootstrap 5, admin, dashboard, template, responsive, css, sass, html, theme, front-end, ui kit, web">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="shortcut icon" href="img/logo.png"/>
+
+	<link rel="canonical" href="https://demo-basic.adminkit.io/" />
+
+	<title>DHC</title>
+
+	<link href="css/app.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js" rel="stylesheet">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	
+
+	<link rel="stylesheet" href="https://cdn.datatables.net/1.10.2/css/jquery.dataTables.min.css">
+	<script type="text/javascript" src="https://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
+
+    <style>
+        th, td{
+        color: black;
+        }
+        .column {
+        float: left;
+        width: 23%;
+        font-size: 16px;
+        }
+        .row_2:after {
+        content: "";
+        display: table;
+        clear: both;
+        }
+        .row_2{
+        color: black;
+        }
+        .row{
+        color: black;
+        }
+    </style>
+
+</head>
+
+<body>
+	<div class="wrapper">
+		<nav id="sidebar" class="sidebar js-sidebar">
+			<div class="sidebar-content js-simplebar">
+				<a class="sidebar-brand" href="index.html">
+          <span class="align-middle"><img src="img/duly_white_logo.png" width="130px" height="50px"></span>
+        </a>
+
+				<ul class="sidebar-nav">
+					<li class="sidebar-header">
+						Pages
+					</li>
+
+					<li class="sidebar-item active">
+						<a class="sidebar-link" href="index.html">
+              <i class="align-middle" data-feather="sliders"></i> <span class="align-middle">Dashboard</span>
+            </a>
+					
+					<li class="sidebar-header">
+						Process A-C
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="bad-debt-suspension.html">
+              	<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Bad Debt Suspension</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="bankruptcy.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Bankruptcy</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="billing-process.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Billing Process</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="callback-process.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Callback Process</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="coding.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Coding</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="CRM-routing-pools.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">CRM Routing Pools</span>
+            </a>
+					</li>
+
+					<li class="sidebar-header">
+						Process D-F
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="divorce.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Divorce</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="deceased.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Deceased</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="denials.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Denials</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="duly-employee.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Duly Employee</span>
+				</a>
+					</li>
+					
+					<li class="sidebar-header">
+						Process G-I
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="Financial-Counselors.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Financial Counselors</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="FH-vs-FN.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">FH vs. FN</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="HIPAA-cheat-sheet.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">HIPAA Cheat Sheet</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="itemized-request.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Itemized Request</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="insurance-follow-up.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Insurance Follow-up</span>
+            </a>
+					</li>
+
+					<li class="sidebar-header">
+						Process J-L
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="LabCorp-vs-Duly.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Lab Corp vs. Duly</span>
+            </a>
+					</li>
+
+					<li class="sidebar-header">
+						Process M-O
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="missing-payment-inquiry.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Missing Payment</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="MyChart-IT.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">My Chart</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="Medicare.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Medicare</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="NSF.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">NSF</span>
+            </a>
+					</li>
+
+					<li class="sidebar-header">
+						Process P-R
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="Payment-Plan.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Payment Plan</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="phone-numbers.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Phone Number</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="Plainfield-Surgical-Center.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Plainfield SC (SA 11)</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="Registration.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Registration</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="Refund.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Refund</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="Return-Mail-vs-HIPAA-Breach.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Return Mail vs. HIPAA Breach</span>
+            </a>
+					</li>
+
+					<li class="sidebar-header">
+						Process S-U
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="Service-Areas.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Service Areas</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="third-party-liability.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Third Party Liability</span>
+            </a>
+					</li>
+
+				</ul>
+
+			</div>
+		</nav>
+
+		<div class="main">
+			<nav class="navbar navbar-expand navbar-light navbar-bg">
+				<a class="sidebar-toggle js-sidebar-toggle">
+          <i class="hamburger align-self-center"></i>
+        </a>
+			</nav>
+			
+			<main class="content">
+				<div class="container-fluid p-0">
+
+					<h1 class="h3 mb-3" style="color: #3652A0;"><strong>Duly Insurance Follow-up Related Call</strong></h1>
+
+                    <div class="row">
+                        <div class="w-100">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <p style="font-size: 16px;"><b>Process Steps</b></p>
+                                            <ol style="font-size: 16px;">
+                                                <li>Obtain all necessary information from the patient to determine the concern. (e.g., Date of service, current procedural codes, 
+                                                    diagnosis codes, total amount etc.)
+                                                </li>
+                                                <li>
+                                                    Review the patient's account and provide any information that can assist with the concern of the call. <br>
+                                                    <span style="color:red;"><b>Note:</b></span> Below are some points to remember in reviewing the account:
+                                                    <ul>
+                                                        <li>Check prior Customer Relations Management (CRM) tickers for additional information pertaining to charges in question.</li>
+                                                        <li>Check account notes for additional information pertaining to charges in question.</li>
+                                                    </ul>
+                                                </li>
+                                                <li>Determine the type of insurance follow up call for further information and details.</li>
+                                            </ol>
+                                            <div class="row_2">
+                                                <div class="column">
+                                                    <p style="background-color: #E5E5E5;width: 80px;"><b>If...</b></p>
+                                                    <p>
+                                                        State of Illinois plan <br>
+                                                        <span style="color:red;"><b>Note:</b></span> Patient will call and inquire about a patient due amount but there is still an amount pending with the plan.
+                                                    </p>
+                                                </div>
+                                                <div class="column">
+                                                    <p style="background-color: #E5E5E5;width: 80px;"><b>Then...</b></p>
+                                                    <p>
+                                                       Advise the patient of the following information regarding the State of Illinois Insurance Plans:
+                                                       <ul>
+                                                            <li>The State of Illinois Insurance Plan is generally weeks behind in making payments to providers.</li>
+                                                            <li>Insurance processes a claim and sends an Explanation of Benefit (EOB) to the patient; the providers are notified via on-line EOB.</li>
+                                                            <li>The actual insurance payment may not be received by the provider until many months later.</li>
+                                                            <li>We can bill the patient for the copay, deductible, coinsurance or other liability before we receive the contracted payment from the plan.</li>
+                                                            <li>Patients will be billed their portion and be expected to pay, while the contractual adjustment and insurance payment due will remain in the 
+                                                                "Insurance Due" column.
+                                                            </li>
+                                                            <li>The contractual adjustment is not applied until the payment is received by the plan.</li>
+                                                       </ul>
+                                                    </p>
+                                                    <p>Create a CRM ticket using the pool <b>CRM Optum AR - Insurance Follow Up</b>. (Refer to Duly Create CRM in Epic) <br>
+                                                        <span style="color:red;"><b>Note:</b></span> User should make sure first that there is no existing CRM ticket created for the same concern.
+                                                    </p>
+                                                </div>
+                                                <div class="column" style="padding-left: 40px;">
+                                                    <p style="background-color: #E5E5E5;width: 80px;"><b>If...</b></p>
+                                                    <p>
+                                                        One-Time Negotiations, sending of required documents <br>
+                                                        <span style="color:red;"><b>Note:</b></span>
+                                                        <ul>
+                                                            <li>Insurance companies may request "One-Time" Negotiations for services.</li>
+                                                            <li>The Insurance Follow-Up team receives and handles these requests.</li>
+                                                        </ul>
+                                                    </p>
+                                                    <p>Determine the number of days the documents were faxed to Insurance Follow-up department.</p>
+                                                    <p>Not more than 10 business days</p>
+                                                    <p style="padding-top: 20px;">
+                                                        More than 10 business days <br>
+                                                        <span style="color: red;"><b>Note:</b></span> It has been more than 10 business days and there is still no update from the department
+                                                    </p>
+                                                </div>
+                                                <div class="column" style="padding-left: 40px;">
+                                                    <p style="background-color: #E5E5E5;width: 80px;"><b>Then...</b></p>
+                                                    <p>
+                                                        Advise the caller to fax their request to the attention of the Insurance Follow-Up Department at fax # 630-545-6010 (all insurance plans). <br>
+                                                        Inform the caller to please allow 10 business days for processing of their faxed request.
+                                                    </p>
+                                                    <p style="padding-top: 150px;">Inform the caller to call back after a full 10 business days.</p>
+                                                    <p>
+                                                        Contact center representative should forward an email to the Patient Account Representative (PAR) Supervisor to advise about the call. <br>
+                                                        Be sure to include all the detail/contact information in the email as well as in the CRM. <br>
+                                                        Do not forward the account to the PAR Pool, the Contact Center Representative can complete the account after forwarding the email to the PAR Supervisor.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="row_2">
+                                                <div class="column">
+                                                    <p style="background-color: #E5E5E5;width: 80px;"><b>If...</b></p>
+                                                    <p style="width:80%">Patient requests a Letter of Medical Necessity for their own appeal to their health plan</p>
+                                                </div>
+                                                <div class="column">
+                                                    <p style="background-color: #E5E5E5;width: 80px;"><b>Then...</b></p>
+                                                    <p>
+                                                        Patient should contact the physician's nurse line to request a Letter of Medical Necessity. <br>
+                                                        If the patient is going to appeal with their plan and not pay any open balances-customer service should suggest a payment plan.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="row_2">
+                                                <div class="column">
+                                                    <p style="background-color: #E5E5E5;width: 80px;"><b>If...</b></p>
+                                                    <p>Timely Filing concerns</p>
+                                                    <p style="padding-top: 160%;width: 80%;">Contracted insurance is the caller requesting to file the claim after timely filing.</p>
+                                                </div>
+                                                <div class="column">
+                                                    <p style="background-color: #E5E5E5;width: 80px;"><b>Then...</b></p>
+                                                    <p><b>Timely Filing limit per payer</b></p>
+                                                    <table class="table table-bordered">
+                                                        <thead>
+                                                            <tr>
+                                                                <th style="text-align: center;">Payer</th>
+                                                                <th style="text-align: center;">Claim Timely Filing Days from DOS</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>Aetna</td>
+                                                                <td style="text-align: center;">90 days</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>BCBS</td>
+                                                                <td style="text-align: center;">180 days</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Cigna</td>
+                                                                <td style="text-align: center;">90 days</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Humana</td>
+                                                                <td style="text-align: center;">180 days</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Humana MA</td>
+                                                                <td style="text-align: center;">12 months</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Medicare</td>
+                                                                <td style="text-align: center;">12 months</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>HFS</td>
+                                                                <td style="text-align: center;">6 months</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>UHC</td>
+                                                                <td style="text-align: center;">90 days</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>PHCS</td>
+                                                                <td style="text-align: center;">90 days</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <p>
+                                                        Obtain the following information:
+                                                        <ul>
+                                                            <li>Name of insurance representative</li>
+                                                            <li>Phone number of insurance representative</li>
+                                                            <li>Call reference number</li>
+                                                        </ul> <br>
+                                                        Create a CRM ticket to the insurance pool. <br>
+                                                        (Refer to Duly Create CRM in Epic) <br>
+                                                        <span style="color: red;"><b>Note:</b></span> Include the reason why the insurance representative is requesting the claim be filed.
+                                                    </p>
+                                                </div>
+                                                <div class="column" style="padding-left: 40px;">
+                                                    <p style="background-color: #E5E5E5;width: 80px;"><b>If...</b></p>
+                                                    <p>Patient is the caller requesting to file the claim after timely filing</p>
+                                                    <p style="padding-top: 80px;">Error is in Duly's part</p>
+                                                    <p style="padding-top: 80px;">Error is caused by the patient</p>
+                                                </div>
+                                                <div class="column" style="padding-left: 40px;">
+                                                    <p style="background-color: #E5E5E5;width: 80px;"><b>Then...</b></p>
+                                                    <p>Review the account thoroughly and determine who is in error for the past timely filing.</p>
+                                                    <p style="padding-top: 56px;">Right-click on the appropriate line and select <b>Next Responsible Party</b>.</p>
+                                                    <p style="padding-top: 56px;">
+                                                        Obtain the following information:
+                                                        <ul>
+                                                            <li>Name of insurance representative</li>
+                                                            <li>Phone number of insurance representative</li>
+                                                            <li>Call reference number</li>
+                                                        </ul> <br>
+                                                        Create a CRM ticket to the insurance pool. <br>
+                                                        (Refer to Duly Create CRM in Epic) <br>
+                                                        <span style="color: red;"><b>Note:</b></span> Include the reason why the patient is requesting the claim be filed.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <img src="img/ins_follow-up.PNG" style="width:850px;height:300px;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+			</main>
+
+			<footer class="footer">
+				<div class="container-fluid">
+					<div class="row text-muted">
+						<div class="col-6 text-start">
+							<p class="mb-0">
+
+							</p>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</div>
+
+	<script src="js/app.js"></script>
+
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			var ctx = document.getElementById("chartjs-dashboard-line").getContext("2d");
+			var gradient = ctx.createLinearGradient(0, 0, 0, 225);
+			gradient.addColorStop(0, "rgba(215, 227, 244, 1)");
+			gradient.addColorStop(1, "rgba(215, 227, 244, 0)");
+			// Line chart
+			new Chart(document.getElementById("chartjs-dashboard-line"), {
+				type: "line",
+				data: {
+					labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+					datasets: [{
+						label: "Sales ($)",
+						fill: true,
+						backgroundColor: gradient,
+						borderColor: window.theme.primary,
+						data: [
+							2115,
+							1562,
+							1584,
+							1892,
+							1587,
+							1923,
+							2566,
+							2448,
+							2805,
+							3438,
+							2917,
+							3327
+						]
+					}]
+				},
+				options: {
+					maintainAspectRatio: false,
+					legend: {
+						display: false
+					},
+					tooltips: {
+						intersect: false
+					},
+					hover: {
+						intersect: true
+					},
+					plugins: {
+						filler: {
+							propagate: false
+						}
+					},
+					scales: {
+						xAxes: [{
+							reverse: true,
+							gridLines: {
+								color: "rgba(0,0,0,0.0)"
+							}
+						}],
+						yAxes: [{
+							ticks: {
+								stepSize: 1000
+							},
+							display: true,
+							borderDash: [3, 3],
+							gridLines: {
+								color: "rgba(0,0,0,0.0)"
+							}
+						}]
+					}
+				}
+			});
+		});
+	</script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			// Pie chart
+			new Chart(document.getElementById("chartjs-dashboard-pie"), {
+				type: "pie",
+				data: {
+					labels: ["Chrome", "Firefox", "IE"],
+					datasets: [{
+						data: [4306, 3801, 1689],
+						backgroundColor: [
+							window.theme.primary,
+							window.theme.warning,
+							window.theme.danger
+						],
+						borderWidth: 5
+					}]
+				},
+				options: {
+					responsive: !window.MSInputMethodContext,
+					maintainAspectRatio: false,
+					legend: {
+						display: false
+					},
+					cutoutPercentage: 75
+				}
+			});
+		});
+	</script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			// Bar chart
+			new Chart(document.getElementById("chartjs-dashboard-bar"), {
+				type: "bar",
+				data: {
+					labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+					datasets: [{
+						label: "This year",
+						backgroundColor: window.theme.primary,
+						borderColor: window.theme.primary,
+						hoverBackgroundColor: window.theme.primary,
+						hoverBorderColor: window.theme.primary,
+						data: [54, 67, 41, 55, 62, 45, 55, 73, 60, 76, 48, 79],
+						barPercentage: .75,
+						categoryPercentage: .5
+					}]
+				},
+				options: {
+					maintainAspectRatio: false,
+					legend: {
+						display: false
+					},
+					scales: {
+						yAxes: [{
+							gridLines: {
+								display: false
+							},
+							stacked: false,
+							ticks: {
+								stepSize: 20
+							}
+						}],
+						xAxes: [{
+							stacked: false,
+							gridLines: {
+								color: "transparent"
+							}
+						}]
+					}
+				}
+			});
+		});
+	</script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			var markers = [{
+					coords: [31.230391, 121.473701],
+					name: "Shanghai"
+				},
+				{
+					coords: [28.704060, 77.102493],
+					name: "Delhi"
+				},
+				{
+					coords: [6.524379, 3.379206],
+					name: "Lagos"
+				},
+				{
+					coords: [35.689487, 139.691711],
+					name: "Tokyo"
+				},
+				{
+					coords: [23.129110, 113.264381],
+					name: "Guangzhou"
+				},
+				{
+					coords: [40.7127837, -74.0059413],
+					name: "New York"
+				},
+				{
+					coords: [34.052235, -118.243683],
+					name: "Los Angeles"
+				},
+				{
+					coords: [41.878113, -87.629799],
+					name: "Chicago"
+				},
+				{
+					coords: [51.507351, -0.127758],
+					name: "London"
+				},
+				{
+					coords: [40.416775, -3.703790],
+					name: "Madrid "
+				}
+			];
+			var map = new jsVectorMap({
+				map: "world",
+				selector: "#world_map",
+				zoomButtons: true,
+				markers: markers,
+				markerStyle: {
+					initial: {
+						r: 9,
+						strokeWidth: 7,
+						stokeOpacity: .4,
+						fill: window.theme.primary
+					},
+					hover: {
+						fill: window.theme.primary,
+						stroke: window.theme.primary
+					}
+				},
+				zoomOnScroll: false
+			});
+			window.addEventListener("resize", () => {
+				map.updateSize();
+			});
+		});
+	</script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			var date = new Date(Date.now() - 5 * 24 * 60 * 60 * 1000);
+			var defaultDate = date.getUTCFullYear() + "-" + (date.getUTCMonth() + 1) + "-" + date.getUTCDate();
+			document.getElementById("datetimepicker-dashboard").flatpickr({
+				inline: true,
+				prevArrow: "<span title=\"Previous month\">&laquo;</span>",
+				nextArrow: "<span title=\"Next month\">&raquo;</span>",
+				defaultDate: defaultDate
+			});
+		});
+	</script>
+</body>
+
+</html>

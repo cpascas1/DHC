@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Duly Consolidated Process">
+	<meta name="author" content="AdminKit">
+	<meta name="keywords" content="adminkit, bootstrap, bootstrap 5, admin, dashboard, template, responsive, css, sass, html, theme, front-end, ui kit, web">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="shortcut icon" href="img/logo.png"/>
+
+	<link rel="canonical" href="https://demo-basic.adminkit.io/" />
+
+	<title>DHC</title>
+
+	<link href="css/app.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js" rel="stylesheet">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	
+
+	<link rel="stylesheet" href="https://cdn.datatables.net/1.10.2/css/jquery.dataTables.min.css">
+	<script type="text/javascript" src="https://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
+
+    <style>
+        #example{
+        font-size: 18px;
+        }
+        .column {
+        float: left;
+        width: 23%;
+        }
+        .row_2:after {
+        content: "";
+        display: table;
+        clear: both;
+        }
+        .row_2{
+            font-size: 16px;
+            padding-bottom: 30px;
+        }
+    </style>
+
+</head>
+
+<body>
+	<div class="wrapper">
+		<nav id="sidebar" class="sidebar js-sidebar">
+			<div class="sidebar-content js-simplebar">
+				<a class="sidebar-brand" href="index.html">
+          <span class="align-middle"><img src="img/duly_white_logo.png" width="130px" height="50px"></span>
+        </a>
+
+				<ul class="sidebar-nav">
+					<li class="sidebar-header">
+						Pages
+					</li>
+
+					<li class="sidebar-item active">
+						<a class="sidebar-link" href="index.html">
+              <i class="align-middle" data-feather="sliders"></i> <span class="align-middle">Dashboard</span>
+            </a>
+					
+					<li class="sidebar-header">
+						Process A-C
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="bad-debt-suspension.html">
+              	<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Bad Debt Suspension</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="bankruptcy.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Bankruptcy</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="billing-process.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Billing Process</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="callback-process.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Callback Process</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="coding.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Coding</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="CRM-routing-pools.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">CRM Routing Pools</span>
+            </a>
+					</li>
+
+					<li class="sidebar-header">
+						Process D-F
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="divorce.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Divorce</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="deceased.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Deceased</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="denials.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Denials</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="duly-employee.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Duly Employee</span>
+				</a>
+					</li>
+					
+					<li class="sidebar-header">
+						Process G-I
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="Financial-Counselors.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Financial Counselors</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="FH-vs-FN.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">FH vs. FN</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="HIPAA-cheat-sheet.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">HIPAA Cheat Sheet</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="itemized-request.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Itemized Request</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="insurance-follow-up.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Insurance Follow-up</span>
+            </a>
+					</li>
+
+					<li class="sidebar-header">
+						Process J-L
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="LabCorp-vs-Duly.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Lab Corp vs. Duly</span>
+            </a>
+					</li>
+
+					<li class="sidebar-header">
+						Process M-O
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="missing-payment-inquiry.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Missing Payment</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="MyChart-IT.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">My Chart</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="Medicare.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Medicare</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="NSF.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">NSF</span>
+            </a>
+					</li>
+
+					<li class="sidebar-header">
+						Process P-R
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="Payment-Plan.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Payment Plan</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="phone-numbers.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Phone Number</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="Plainfield-Surgical-Center.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Plainfield SC (SA 11)</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="Registration.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Registration</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="Refund.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Refund</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="Return-Mail-vs-HIPAA-Breach.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Return Mail vs. HIPAA Breach</span>
+            </a>
+					</li>
+
+					<li class="sidebar-header">
+						Process S-U
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="Service-Areas.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Service Areas</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="third-party-liability.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Third Party Liability</span>
+            </a>
+					</li>
+
+				</ul>
+
+			</div>
+		</nav>
+
+		<div class="main">
+			<nav class="navbar navbar-expand navbar-light navbar-bg">
+				<a class="sidebar-toggle js-sidebar-toggle">
+          <i class="hamburger align-self-center"></i>
+        </a>
+			</nav>
+			
+			<main class="content">
+				<div class="container-fluid p-0">
+
+					<h1 class="h3 mb-3" style="color: #3652A0;"><strong>Missing Payment</strong></h1>
+
+                    <div class="row">
+						<div class="col-12">
+							<div class="card">
+								<div class="card-body">
+                                    <p style="color: #3652A0;font-size: 18px;padding-bottom: 10px;"><strong>Missing Payment Inquiry</strong></p>
+                                    
+                                    <div class="inquiry" style="color: black;">
+                                        <p style="font-size: 18px;"><strong>Overview</strong></p>
+                                    <p style="font-size: 16px;">If contact center determines that a caller is calling about a missing payment, the representative can follow the steps below to further assist the caller
+                                        and resolve the concern.
+                                    </p>
+
+                                    <p style="font-size: 18px;"><strong>Process Steps</strong></p>
+                                    <ol style="font-size: 16px;padding-bottom: 30px;">
+                                        <li>Review the following missing payment checklist:</li>
+                                        <ul>
+                                            <li>Verify the caller if it was their name on the check; or did someones else with a different name mail in a payment for them?</li>
+                                            <li>Ask if the account number was written on the check.</li>
+                                            <li>Verify the caller at what location was the payment made-if at a site.</li>
+                                            <li>Does the caller's bank statement show that the check was cashed?</li>
+                                            <li>Does the caller's credit card statement show the payment went through (not pending)?</li>
+                                            <li>If paid by credit card, what are the last 4 digits of the card number? (include on copy if taxed)</li>
+                                        </ul>
+                                    </ol>
+                                    
+                                    <p style="font-size: 16px;">Determine if the payment was found.</p>
+                                    <div class="row_2">
+                                        <div class="column">
+                                            <p>No payment found</p>
+                                        </div>
+                                        <div class="column">
+                                            <p>Request caller to submit paperwork in the form of canceled check (front and back) credit card statement, or receipts.</p>
+                                        </div>
+                                    </div>
+
+                                    <p style="font-size: 16px;">Locate the appropriate payment and provide the details to the caller.</p>
+                                    <p style="color: red;font-size: 16px;"><strong>Note:</strong></p>
+                                    <ul style="font-size: 16px;">
+                                        <li>User should make sure to reach the payment on both primary and secondary account.</li>
+                                        <li>In searching for the payment, contact center representative can use the following codes:</li>
+                                        <ul>
+                                            <li>Payment codes:</li>
+                                            <ul>
+                                                <li>PC123 (lockbox-patient payment)</li>
+                                                <li>PC109 (co-payment)</li>
+                                                <li>PC104 (patient payment at site)</li>
+                                                <li>PC121 (bad debt patient payment)</li>
+                                                <li>PC122 (patient pre-payment)</li>
+                                            </ul>
+                                            <li>Patient refund code:</li>
+                                            <ul>
+                                                <li>AC708 (user should make sure we did not receive and refund back to patient).</li>
+                                            </ul>
+                                        </ul>
+                                    </ul>
+				    <img src="img/mp.png" style="width:90%; height:90%;">
+				    <img src="img/ca.PNG" style="width:45%; height:90%;">
+                                    </div>
+								</div>
+							</div>
+						</div>
+					</div>
+			</main>
+
+			<footer class="footer">
+				<div class="container-fluid">
+					<div class="row text-muted">
+						<div class="col-6 text-start">
+							<p class="mb-0">
+
+							</p>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</div>
+
+	<script src="js/app.js"></script>
+
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			var ctx = document.getElementById("chartjs-dashboard-line").getContext("2d");
+			var gradient = ctx.createLinearGradient(0, 0, 0, 225);
+			gradient.addColorStop(0, "rgba(215, 227, 244, 1)");
+			gradient.addColorStop(1, "rgba(215, 227, 244, 0)");
+			// Line chart
+			new Chart(document.getElementById("chartjs-dashboard-line"), {
+				type: "line",
+				data: {
+					labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+					datasets: [{
+						label: "Sales ($)",
+						fill: true,
+						backgroundColor: gradient,
+						borderColor: window.theme.primary,
+						data: [
+							2115,
+							1562,
+							1584,
+							1892,
+							1587,
+							1923,
+							2566,
+							2448,
+							2805,
+							3438,
+							2917,
+							3327
+						]
+					}]
+				},
+				options: {
+					maintainAspectRatio: false,
+					legend: {
+						display: false
+					},
+					tooltips: {
+						intersect: false
+					},
+					hover: {
+						intersect: true
+					},
+					plugins: {
+						filler: {
+							propagate: false
+						}
+					},
+					scales: {
+						xAxes: [{
+							reverse: true,
+							gridLines: {
+								color: "rgba(0,0,0,0.0)"
+							}
+						}],
+						yAxes: [{
+							ticks: {
+								stepSize: 1000
+							},
+							display: true,
+							borderDash: [3, 3],
+							gridLines: {
+								color: "rgba(0,0,0,0.0)"
+							}
+						}]
+					}
+				}
+			});
+		});
+	</script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			// Pie chart
+			new Chart(document.getElementById("chartjs-dashboard-pie"), {
+				type: "pie",
+				data: {
+					labels: ["Chrome", "Firefox", "IE"],
+					datasets: [{
+						data: [4306, 3801, 1689],
+						backgroundColor: [
+							window.theme.primary,
+							window.theme.warning,
+							window.theme.danger
+						],
+						borderWidth: 5
+					}]
+				},
+				options: {
+					responsive: !window.MSInputMethodContext,
+					maintainAspectRatio: false,
+					legend: {
+						display: false
+					},
+					cutoutPercentage: 75
+				}
+			});
+		});
+	</script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			// Bar chart
+			new Chart(document.getElementById("chartjs-dashboard-bar"), {
+				type: "bar",
+				data: {
+					labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+					datasets: [{
+						label: "This year",
+						backgroundColor: window.theme.primary,
+						borderColor: window.theme.primary,
+						hoverBackgroundColor: window.theme.primary,
+						hoverBorderColor: window.theme.primary,
+						data: [54, 67, 41, 55, 62, 45, 55, 73, 60, 76, 48, 79],
+						barPercentage: .75,
+						categoryPercentage: .5
+					}]
+				},
+				options: {
+					maintainAspectRatio: false,
+					legend: {
+						display: false
+					},
+					scales: {
+						yAxes: [{
+							gridLines: {
+								display: false
+							},
+							stacked: false,
+							ticks: {
+								stepSize: 20
+							}
+						}],
+						xAxes: [{
+							stacked: false,
+							gridLines: {
+								color: "transparent"
+							}
+						}]
+					}
+				}
+			});
+		});
+	</script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			var markers = [{
+					coords: [31.230391, 121.473701],
+					name: "Shanghai"
+				},
+				{
+					coords: [28.704060, 77.102493],
+					name: "Delhi"
+				},
+				{
+					coords: [6.524379, 3.379206],
+					name: "Lagos"
+				},
+				{
+					coords: [35.689487, 139.691711],
+					name: "Tokyo"
+				},
+				{
+					coords: [23.129110, 113.264381],
+					name: "Guangzhou"
+				},
+				{
+					coords: [40.7127837, -74.0059413],
+					name: "New York"
+				},
+				{
+					coords: [34.052235, -118.243683],
+					name: "Los Angeles"
+				},
+				{
+					coords: [41.878113, -87.629799],
+					name: "Chicago"
+				},
+				{
+					coords: [51.507351, -0.127758],
+					name: "London"
+				},
+				{
+					coords: [40.416775, -3.703790],
+					name: "Madrid "
+				}
+			];
+			var map = new jsVectorMap({
+				map: "world",
+				selector: "#world_map",
+				zoomButtons: true,
+				markers: markers,
+				markerStyle: {
+					initial: {
+						r: 9,
+						strokeWidth: 7,
+						stokeOpacity: .4,
+						fill: window.theme.primary
+					},
+					hover: {
+						fill: window.theme.primary,
+						stroke: window.theme.primary
+					}
+				},
+				zoomOnScroll: false
+			});
+			window.addEventListener("resize", () => {
+				map.updateSize();
+			});
+		});
+	</script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			var date = new Date(Date.now() - 5 * 24 * 60 * 60 * 1000);
+			var defaultDate = date.getUTCFullYear() + "-" + (date.getUTCMonth() + 1) + "-" + date.getUTCDate();
+			document.getElementById("datetimepicker-dashboard").flatpickr({
+				inline: true,
+				prevArrow: "<span title=\"Previous month\">&laquo;</span>",
+				nextArrow: "<span title=\"Next month\">&raquo;</span>",
+				defaultDate: defaultDate
+			});
+		});
+	</script>
+</body>
+
+</html>

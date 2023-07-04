@@ -1,0 +1,1273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Duly Consolidated Process">
+	<meta name="author" content="AdminKit">
+	<meta name="keywords" content="adminkit, bootstrap, bootstrap 5, admin, dashboard, template, responsive, css, sass, html, theme, front-end, ui kit, web">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="shortcut icon" href="img/logo.png"/>
+
+	<link rel="canonical" href="https://demo-basic.adminkit.io/" />
+
+	<title>DHC</title>
+
+	<link href="css/app.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js" rel="stylesheet">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	
+
+	<link rel="stylesheet" href="https://cdn.datatables.net/1.10.2/css/jquery.dataTables.min.css">
+	<script type="text/javascript" src="https://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
+
+    <style>
+        td{
+            font-size: 16px;
+        }
+		th{
+			font-size: 18px;
+		}
+		table, th, td{
+			border: 3px solid black;
+		}
+		.tab {
+		overflow: hidden;
+		border: 1px solid #ccc;
+		background-color: #f1f1f1;
+		}
+		.tab button {
+		background-color: inherit;
+		float: left;
+		border: none;
+		outline: none;
+		cursor: pointer;
+		padding: 14px 16px;
+		transition: 0.3s;
+		font-size: 17px;
+		}
+		.tab button.active {
+		background-color: #ccc;
+		}
+		.tabcontent {
+		display: none;
+		padding: 6px 12px;
+		border: 1px solid #ccc;
+		border-top: none;
+		}
+    </style>
+
+</head>
+
+<body>
+	<div class="wrapper">
+		<nav id="sidebar" class="sidebar js-sidebar">
+			<div class="sidebar-content js-simplebar">
+				<a class="sidebar-brand" href="index.html">
+          <span class="align-middle"><img src="img/duly_white_logo.png" width="130px" height="50px"></span>
+        </a>
+
+				<ul class="sidebar-nav">
+					<li class="sidebar-header">
+						Pages
+					</li>
+
+					<li class="sidebar-item active">
+						<a class="sidebar-link" href="index.html">
+              <i class="align-middle" data-feather="sliders"></i> <span class="align-middle">Dashboard</span>
+            </a>
+					
+					<li class="sidebar-header">
+						Process A-C
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="bad-debt-suspension.html">
+              	<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Bad Debt Suspension</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="bankruptcy.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Bankruptcy</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="billing-process.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Billing Process</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="callback-process.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Callback Process</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="coding.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Coding</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="CRM-routing-pools.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">CRM Routing Pools</span>
+            </a>
+					</li>
+
+					<li class="sidebar-header">
+						Process D-F
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="divorce.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Divorce</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="deceased.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Deceased</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="denials.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Denials</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="duly-employee.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Duly Employee</span>
+				</a>
+					</li>
+					
+					<li class="sidebar-header">
+						Process G-I
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="Financial-Counselors.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Financial Counselors</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="FH-vs-FN.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">FH vs. FN</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="HIPAA-cheat-sheet.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">HIPAA Cheat Sheet</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="itemized-request.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Itemized Request</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="insurance-follow-up.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Insurance Follow-up</span>
+            </a>
+					</li>
+
+					<li class="sidebar-header">
+						Process J-L
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="LabCorp-vs-Duly.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Lab Corp vs. Duly</span>
+            </a>
+					</li>
+
+					<li class="sidebar-header">
+						Process M-O
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="missing-payment-inquiry.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Missing Payment</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="MyChart-IT.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">My Chart</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="Medicare.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Medicare</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="NSF.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">NSF</span>
+            </a>
+					</li>
+
+					<li class="sidebar-header">
+						Process P-R
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="Payment-Plan.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Payment Plan</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="phone-numbers.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Phone Number</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="Plainfield-Surgical-Center.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Plainfield SC (SA 11)</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="Registration.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Registration</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="Refund.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Refund</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="Return-Mail-vs-HIPAA-Breach.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Return Mail vs. HIPAA Breach</span>
+            </a>
+					</li>
+
+					<li class="sidebar-header">
+						Process S-U
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="Service-Areas.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Service Areas</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="third-party-liability.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Third Party Liability</span>
+            </a>
+					</li>
+
+				</ul>
+
+			</div>
+		</nav>
+
+		<div class="main">
+			<nav class="navbar navbar-expand navbar-light navbar-bg">
+				<a class="sidebar-toggle js-sidebar-toggle">
+          <i class="hamburger align-self-center"></i>
+        </a>
+			</nav>
+			
+			<main class="content">
+				<div class="container-fluid p-0">
+
+					<h1 class="h3 mb-3" style="color: #3652A0;"><strong>CRM Tip Sheet</strong></h1>
+
+                    <div class="row">
+						<div class="w-100">
+							<div class="row">
+								<div class="col-sm-12">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <p style="font-size: 16px;color: red;">Click on the buttons inside the tabbed menu</p>
+
+											<div class="tab">
+												<button class="tablinks" onclick="openCF(event, 'Routing')">CRM Routing</button>
+												<button class="tablinks" onclick="openCF(event, 'Pool')">CRM Pool</button>
+											</div>
+
+											<div id="Routing" class="tabcontent">
+												<table id="example" class="table table-striped" style="width:100%;">
+													<thead>
+														<tr>
+															<th class="th-sm" style="text-align: center;width: 10%;background-color: #FAE4D3;padding-bottom: 25px;color:black;"><b>Reason for Request</b></th>
+															<th class="th-sm" style="text-align: center;width: 10%;background-color: #FAE4D3;padding-bottom: 25px;color:black;"><b>Appropriate Pool</b></th>
+															<th class="th-sm" style="text-align: center;width: 5%;background-color: #FAE4D3;color:black;"><b>Quick CRM <br>(Yes or No)</b></th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr style="padding-bottom: 50px;">
+															<td><b>Deceased Notification</b></td>
+															<td><b>CRM Registration Request</b></td>
+															<td style="text-align:center;">Yes</td>
+														</tr>
+														<tr>
+															<td><b>Financial Navigation Requests</b></td>
+															<td><b>CRM Optum FN - Financial Navigation Requests</b></td>
+															<td style="text-align:center;">Yes</td>
+														</tr>
+														<tr>
+															<td><b>Account Merge</b> <br>
+																<p style="padding-top: 15px;"><i>Patient has two accounts in the same service area with the same account type. </i></p>
+																<i>Multiple Service Area's cannot be combined. All adults over the age of 18 must remain separated.</i>
+															</td>
+															<td><b>CRM Registration Request</b></td>
+															<td style="text-align:center;">Yes</td>
+														</tr>
+														<tr>
+															<td><b>Missing Payment Inquiry</b> <br>
+																<p style="padding-top: 15px;">Request patient to provide proof of payment. (Copy of Cashed Check/Front & Back)</p>
+																Credit Card Statement
+															</td>
+															<td><b>CRM Payment Post</b><br>(Documentation must be provided first)</td>
+															<td style="text-align:center;">Yes</td>
+														</tr>
+														<tr>
+															<td><b>Denial Review Medical Necessity</b></td>
+															<td>
+																<p>Forward CRM to <b>CRM Optum Coding - Coding Review</b></p>
+																Apply 25% Self-Pay discount to denied service
+															</td>
+															<td style="text-align:center;">Yes</td>
+														</tr>
+														<tr>
+															<td><b>Denial Review Authorization</b></td>
+															<td>
+																<p>Authorization number is  missing from referral:</p>
+																Forward to <b>CRM Optum HPS - CS</b>
+															</td>
+															<td style="text-align:center;">No</td>
+														</tr>
+														<tr>
+															<td rowspan="3">Review referral to determine if authorization was obtained.</td>
+															<td>
+																<p><b>Referral Authorization Inquiries</b></p>
+																If insurance rejects the retro authorization, we will connect back to you with the recommendation to
+																appeal with your insurance. In the meantime, I have provided you a 25% discount on the denied service.
+															</td>
+															<td style="text-align:center;"></td>
+														</tr>
+														<tr>
+															<td>
+																<p>Authorization number is listed on referral:<br>
+																	View Claim Image to determine if authorization number was added to the claim.
+																</p>
+																Missing on Claim:<br>
+																Send CRM to <b>CRM Optum AR - Insurance Follow Up</b><br>
+																Request Claim to be updated to include authorization number and be resent.
+															</td>
+															<td style="text-align:center;">No</td>
+														</tr>
+														<tr>
+															<td>
+																<p>Listed on Claim:<br>
+																	Do not route CRM - Provide authorization number to the patient and have them appeal with the insurance company.
+																</p>
+																Apply 25% Self-Pay discount to denied service
+															</td>
+															<td style="text-align:center;">N/A</td>
+														</tr>
+														<tr>
+															<td><b>Financial Hardship Adjustment Missing</b></td>
+															<td><b>CRM Optum Collections - Recall Request</b></td>
+															<td style="text-align:center;">No</td>
+														</tr>
+														<tr>
+															<td><b>Recall Request</b></td>
+															<td>Charges sent to collections in error
+																<b>CRM Optum Collections - Recall Request</b>
+															</td>
+															<td style="text-align:center;"></td>
+														</tr>
+														<tr>
+															<td><b>W-9 Requests</b></td>
+															<td><b>CRM Optum CS - W9 Requests</b></td>
+															<td style="text-align:center;">No</td>
+														</tr>
+														<tr>
+															<td><b>Request for Medical Records</b></td>
+															<td>No CRM - direct patient to Duly Website to Request Medical Records.</td>
+															<td style="text-align:center;">N/A</td>
+														</tr>
+														<tr>
+															<td><b>Coding Review</b></td>
+															<td><b>CRM Optum Coding - Coding Review</b></td>
+															<td style="text-align:center;">Yes</td>
+														</tr>
+														<tr>
+															<td><b>Itemized Bill Request</b></td>
+															<td><b>CRM Optum CS - Itemized Bill</b></td>
+															<td style="text-align:center;">No</td>
+														</tr>
+														<tr>
+															<td><b>HCFA Request</b></td>
+															<td><b>CRM Optum Support Staff HCFA/1500 Requests</b></td>
+															<td style="text-align:center;">No</td>
+														</tr>
+														<tr>
+															<td>Insurance Benefit Questions</td>
+															<td>Direct Patient to their insurance. - No CRM</td>
+															<td style="text-align:center;">N/A</td>
+														</tr>
+														<tr>
+															<td><p>Bankruptcy Notification</p>
+																<i>Patient must provide case number or full social for look up.</i>
+															</td>
+															<td><b>CRM Optum Collections - Bankruptcy Review</b></td>
+															<td style="text-align:center;">No</td>
+														</tr>
+														<tr>
+															<td><b>Patient Callback Request</b></td>
+															<td>Additional Department Reviewed, patient needs follow up
+																<b>CRM OPTUM CS - PATIENT CALLBACK REQUEST</b>
+															</td>
+															<td style="text-align:center;">No</td>
+														</tr>
+														<tr>
+															<td><b>Promotional Discount Missing</b></td>
+															<td><b>CRM OPTUM CS - COLLECTION INQUIRY</b></td>
+															<td style="text-align:center;">No</td>
+														</tr>
+														<tr>
+															<td rowspan="2">
+																<p><b>Work Comp Request</b></p>
+															</td>
+															<td>
+																<p>Request to Create New Work Comp account - <b>CRM Optum WC - New Account Request</b></p>
+																<p>Surgical Centers:</p>
+																<b>CRM Optum WC - Surgical W/C Inquiry</b>
+																<p style="padding-top:25px;"><b>Worker's Comp Template</b></p>
+																<p>
+																	Date of Injury <br>
+	
+																	Employer: <br>
+	
+																	Body Part Injured: <br>
+	
+																	Claim Number: <br>
+	
+																	Adjuster Name & Phone Number: <br>
+	
+																	Insurance Company Name: <br>
+	
+																	Claims Address: 
+																</p>
+															</td>
+															<td style="text-align:center;">No</td>
+														</tr>
+														<tr>
+															<td>Request to transfer charges - <b>CRM Optum WC - Account Review</b></td>
+															<td style="text-align:center;">No</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+
+											<div id="Pool" class="tabcontent">
+												<table id="example" class="table table-striped" style="width:100%;">
+													<thead>
+														<tr>
+															<th class="th-sm" style="text-align: center;width: 6%;background-color: #5B9BD5;color:black;"><b>CRM POOL</b></th>
+															<th class="th-sm" style="text-align: center;width: 10%;background-color: #5B9BD5;color:black;"><b>REASON OF CREATING CRM</b></th>
+															<th class="th-sm" style="text-align: center;width: 8%;background-color: #5B9BD5;color:black;"><b>FOLLOW UP</b></th>
+															<th class="th-sm" style="text-align: center;width: 5%;background-color: #5B9BD5;color:black;"><b>ESCALATION</b></th>
+															<th class="th-sm" style="text-align: center;width: 5%;background-color: #5B9BD5;color:black;"><b>CLOSE</b></th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td rowspan="6"><b>Registration (P CRM REGISTRATION REQUEST - 13200 )</b></td>
+															<td>
+																<p style="text-align: center;"><b>1. Deceased Notification</b> <br>
+																Death Certificate were received and attached on file.</p>
+															</td>
+															<td style="text-align:center;">
+																Still pending for more than 7-14 days: <br>
+																Mark it as high priority 
+															</td>
+															<td style="text-align:center;">
+																Still pending for more than 7-14 days from adding High priority status: <br>
+																Send an email escalation to supports for escalations
+															</td>
+															<td style="text-align:center;">
+																If resolution has been posted and yet patient were not yet notified then, educate patient of the resolution then close the CRM
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<p style="text-align: center;"><b>2. Account Merge</b> <br>
+																Patient has two accounts in the same service area with the same account type.</p>
+															</td>
+															<td style="text-align:center;">
+																Still pending for more than 7-14 days: <br>
+																Mark it as high priority
+															</td>
+															<td style="text-align:center;">
+																Still pending for more than 7-14 days from adding High priority status: <br>
+																Send an email escalation to supports for escalations
+															</td>
+															<td style="text-align:center;">
+																If resolution has been posted and yet patient were not yet notified then, educate patient of the resolution then close the CRM
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<p style="text-align: center;"><b>3. Transfer charges from one account to another</b> <br>
+																Verify the details first and make sure to create the CRM to the original account .</p>
+															</td>
+															<td style="text-align:center;">
+																Still pending for more than 7-14 days: <br>
+																Mark it as high priority
+															</td>
+															<td style="text-align:center;">
+																Still pending for more than 7-14 days from adding High priority status: <br>
+																Send an email escalation to supports for escalations
+															</td>
+															<td style="text-align:center;">
+																If resolution has been posted and yet patient were not yet notified then, educate patient of the resolution then close the CRM
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<p style="text-align: center;"><b>4. Adding Insurance to BH account</b> <br>
+																Make sure to run the RTE first if eligible and try to add it. If still unable to add it then create the CRM.</p>
+															</td>
+															<td style="text-align:center;">
+																Still pending for more than 7-14 days: <br>
+																Mark it as high priority
+															</td>
+															<td style="text-align:center;">
+																Still pending for more than 7-14 days from adding High priority status: <br>
+																Send an email escalation to supports for escalations
+															</td>
+															<td style="text-align:center;">
+																If resolution has been posted and yet patient were not yet notified then, educate patient of the resolution then close the CRM
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<p style="text-align: center;"><b>5. Transfer charges from one account to another</b> <br>
+																	Confirm why charges needs to transfer and add complete note on where to transfer it.</p>
+															</td>
+															<td style="text-align:center;">
+																Still pending for more than 7-14 days: <br>
+																Mark it as high priority
+															</td>
+															<td style="text-align:center;">
+																Still pending for more than 7-14 days from adding High priority status: <br>
+																Send an email escalation to supports for escalations
+															</td>
+															<td style="text-align:center;">
+																If resolution has been posted and yet patient were not yet notified then, educate patient of the resolution then close the CRM
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<p style="text-align: center;"><b>6. Updating Demographics (Name or DOB)</b> <br>
+																Make sure that the document showing the the correct Name or DOB is showing (ex: Government ID).</p>
+															</td>
+															<td style="text-align:center;">
+																Still pending for more than 7-14 days: <br>
+																Mark it as high priority
+															</td>
+															<td style="text-align:center;">
+																Still pending for more than 7-14 days from adding High priority status: <br>
+																Send an email escalation to supports for escalations
+															</td>
+															<td style="text-align:center;">
+																If resolution has been posted and yet patient were not yet notified then, educate patient of the resolution then close the CRM
+															</td>
+														</tr>
+														<tr>
+															<td rowspan="2"><b>Coding (P CRM OPTUM CODING - CODING REVIEW -  13203)</b></td>
+															<td>
+																<p style="text-align: center;"><b>1. Incorrect Coding</b> <br>
+																	If patient disputing how the service were billed if there is a correction needed.</p>
+															</td>
+															<td style="text-align:center;">
+																Still pending for more than 7-14 days: <br>
+																Mark it as high priority 
+															</td>
+															<td style="text-align:center;">
+																Still pending for more than 7-14 days from adding High priority status: <br>
+																Send an email escalation to supports for escalations
+															</td>
+															<td style="text-align:center;">
+																If resolution has been posted and yet patient were not yet notified then, educate patient of the resolution then close the CRM
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<p style="text-align: center;"><b>2. Voiding the charge</b> <br>
+																If patient stating that the service did not happen or were inform by the doctor that the service will not be billed.</p>
+															</td>
+															<td style="text-align:center;">
+																Still pending for more than 7-14 days: <br>
+																Mark it as high priority
+															</td>
+															<td style="text-align:center;">
+																Still pending for more than 7-14 days from adding High priority status: <br>
+																Send an email escalation to supports for escalations
+															</td>
+															<td style="text-align:center;">
+																If resolution has been posted and yet patient were not yet notified then, educate patient of the resolution then close the CRM
+															</td>
+														</tr>
+														<tr>
+															<td rowspan="2"><b>Credit Balance (P CRM OPTUM CREDIT BALANCE - 100419)</b></td>
+															<td>
+																<p style="text-align: center;"><b>1. Refund Request </b> <br>
+																Check if the account has $0 Self-pay balance and there is a $0 pending with insurance, then right click on undistributed payment and click on refund. </p>
+															</td>
+															<td style="text-align:center;">	
+																If the patient calls back again, you can reroute the existing CRM to Credit Balance – Supervisor pool as the second escalation. 
+															</td>
+															<td style="text-align:center;">	
+																If the patient calls back again, after CRM was routed to Credit Balance – Supervisor pool as the second escalation with still no update, send CRM to supports for escalation.  
+															</td>
+															<td style="text-align:center;">
+																If the refund has been completed and CRM is still open, close CRM.
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<p style="text-align: center;"><b>2. Transferring Payment to an account with a  different service area</b> <br>
+																Create CRM and properly document payment details and indicate the account number where the payment should be transferred to.</p>
+															</td>
+															<td style="text-align:center;">
+																If the patient calls back after 14 days and the payment transfer has not been transferred, route the CRM to credit balance supervisor. (P CRM OPTUM CREDIT BALANCE - SUPERVISOR REQUEST)
+															</td>
+															<td style="text-align:center;">
+																If the patient calls back again, and the refund has not been completed, send to supports for follow-up.
+															</td>
+															<td style="text-align:center;">
+																Close CRM if transfer of payment has been completed
+															</td>
+														</tr>
+														<tr>
+															<td rowspan="4"><b>AR Follow-up (P CRM OPTUM AR INSURANCE FOLLOW UP - 13199 )</b></td>
+															<td>
+																<p style="text-align: center;"><b>1. CO Denial that needs review</b></p>
+															</td>
+															<td style="text-align:center;">
+																Still pending for more than 7-14 days: <br>
+																Mark it as high priority and add additional details if needed
+															</td>
+															<td style="text-align:center;">
+																If CRM still has no response after 14 business days, send the CRM to supports for escalation. 
+															</td>
+															<td style="text-align:center;">
+																If resolution has been posted and yet patient were not yet notified then, educate patient of the resolution then close the CRM
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<p style="text-align: center;"><b>2. If claim was denied missing referral and a referral was obtained</b></p>
+															</td>
+															<td style="text-align:center;">
+																Still pending for more than 7-14 days: <br>
+																Mark it as high priority and add additional details if needed
+															</td>
+															<td style="text-align:center;">
+																If CRM still has no response after 14 business days, send the CRM to supports for escalation. 
+															</td>
+															<td style="text-align:center;">
+																If resolution has been posted and yet patient were not yet notified then, educate patient of the resolution then close the CRM
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<p style="text-align: center;"><b>3. If authorization has been obtained, then we can create a CRM to AR insurance follow up for reprocessing</b></p>
+															</td>
+															<td style="text-align:center;">
+																Still pending for more than 7-14 days: <br>
+																Mark it as high priority and add additional details if needed
+															</td>
+															<td style="text-align:center;">
+																If CRM still has no response after 14 business days, send the CRM to supports for escalation. 
+															</td>
+															<td style="text-align:center;">
+																If resolution has been posted and yet patient were not yet notified then, educate patient of the resolution then close the CRM
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<p style="text-align: center;"><b>4. Verify Credentialing</b></p>
+															</td>
+															<td style="text-align:center;">
+																Still pending for more than 7-14 days: <br>
+																Mark it as high priority and add additional details if needed
+															</td>
+															<td style="text-align:center;">
+																If CRM still has no response after 14 business days, send the CRM to supports for escalation. 
+															</td>
+															<td style="text-align:center;">
+																If resolution has been posted and yet patient were not yet notified then, educate patient of the resolution then close the CRM
+															</td>
+														</tr>
+														<tr>
+															<td><b>HPS (P CRM OPTUM HPS CS REFERRAL/AUTHORIZATION INQUIRIES - 50061)</b></td>
+															<td>
+																<p style="text-align: center;"><b>1. No Auth/Referral</b> <br>
+																If Patient said that the insurance allowed retro auth/referral</p>
+															</td>
+															<td style="text-align:center;">
+																Still pending for more than 7-14 days: <br>
+																Mark it as high priority and add additional details if needed
+															</td>
+															<td style="text-align:center;">
+																Still pending for more than 7-14 days from adding High priority status: <br>
+																Send an email escalation to supports for escalations
+															</td>
+															<td style="text-align:center;">
+																If resolution has been posted and yet patient were not yet notified then, educate patient of the resolution then close the CRM
+															</td>
+														</tr>
+														<tr>
+															<td rowspan="2"><b>Payment Post (P CRM PAYMENT POST - 50034)</b></td>
+															<td>
+																<p style="text-align: center;"><b>1. Missing Payment ( Patient paid through online, mychart or via phonecall with billing )</b> <br>
+																	Note: Follow missing payment guidelines <br>
+																	If patient said that they sent proof of payment to our email address. (Note: We can create CRM to this pool if the proof of payment is valid.) <br>
+																	Note: Seek help with the support to check if the email is received and proof is valid before creating the CRM</p>
+															</td>
+															<td style="text-align:center;">
+																Still pending for more than 7-14 days: <br>
+																Mark it as high priority and add additional details if needed
+															</td>
+															<td style="text-align:center;">
+																Still pending for more than 7-14 days from adding High priority status: <br>
+																Send an email escalation to supports for escalations
+															</td>
+															<td style="text-align:center;">
+																If resolution has been posted and yet patient were not yet notified then, educate patient of the resolution then close the CRM
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<p style="text-align: center;"><b>2. SP do not match the EOB received from insurance</b></p>
+															</td>
+															<td style="text-align:center;">
+																Still pending for more than 7-14 days: <br>
+																Mark it as high priority and add additional details if needed
+															</td>
+															<td style="text-align:center;">
+																Still pending for more than 7-14 days from adding High priority status: <br>
+																Send an email escalation to supports for escalations
+															</td>
+															<td style="text-align:center;">
+																If resolution has been posted and yet patient were not yet notified then, educate patient of the resolution then close the CRM
+															</td>
+														</tr>
+														<tr>
+															<td rowspan="2"><b>Worker's Comp (P CRM OPTUM WC UM- NEW CASE REQUEST - 50001)</b></td>
+															<td>
+																<p style="text-align: center;"><b>1. Patient has charges that need to be billed to worker's comp and patient does not have a worker's comp account Create CRM Worker's Comp with the  following details :</b></p>
+																	<p style="text-align: center;"><b>CRM OPTUM WC UM- NEW CASE REQUEST 50001</b> <br>
+																	WC Insurance Name: <br>
+																	WC Insurance Address: <br>
+																	WC Claim #: <br>
+																	WC Adjuster Name: <br>
+																	WC Adjuster Phone#: <br>
+																	WC Adjuster Fax#: <br>
+																	Date of Injury: <br>
+																	Injured Body Part: <br>
+																	Service Dates:</p>
+															</td>
+															<td style="text-align:center;">
+																Still pending for more than 7-14 days: <br>
+																Mark it as high priority and add additional details if needed
+															</td>
+															<td style="text-align:center;">
+																If CRM still has no response after 14 business days, send the CRM to supports for escalation. 
+															</td>
+															<td style="text-align:center;">
+																If an outbound has been done and resolution was given close the CRM 
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<p style="text-align: center;"><b>2. Dates of service need to be transferred to the patient's worker's comp account.  (P P CRM OPTUM WC - WC INQUIRY - 50000)</b></p>
+															</td>
+															<td style="text-align:center;">
+																Still pending for more than 7-14 days: <br>
+																Mark it as high priority and add additional details if needed
+															</td>
+															<td style="text-align:center;">
+																If CRM still has no response after 14 business days, send the CRM to supports for escalation. 
+															</td>
+															<td style="text-align:center;">
+																If an outbound has been done and resolution was given close the CRM 
+															</td>
+														</tr>
+														<tr>
+															<td rowspan="3"><b>Collections (P CRM OPTUM COLLECTIONS - RECALL REVIEW - 13201)</b></td>
+															<td>
+																<p style="text-align: center;"><b>1. Charges sent to collections in error</b></p>
+																<ul>
+																	<li>If the charges were sent as part of an automated
+																		collections placement (under $500.00) and a recall
+																		is justified, send the charges further to the CRM
+																		Optum Collections – Recall Request and
+																		explain the justification.
+																	</li>
+																	<li>
+																		If the charges were sent by a collector (over
+																		$500.00), discuss with the team
+																		lead/supervisor/manager before requesting a
+																		recall. <b>(P CRM OPTUM COLLECTIONS - RECALL REVIEW - 13201)</b>
+																	</li>
+																</ul>
+															</td>
+															<td style="text-align:center;">
+																Still pending for more than 7-14 days: <br>
+																Mark it as high priority and add additional details if needed
+															</td>
+															<td style="text-align:center;">
+																If CRM still has no response after 14 business days, send the CRM to supports for escalation. 
+															</td>
+															<td style="text-align:center;">
+																If an outbound has been done and resolution was given close the CRM 
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<p style="text-align: center;"><b>2. Bankruptcy Notification</b> <br>
+																Patient must provide case number or full social for look up. <b>(P CRM OPTUM COLLECTIONS - BANKRUPTCY REVIEW - 50021)</b></p>
+															</td>
+															<td style="text-align:center;">
+																Still pending for more than 7-14 days: <br>
+																Mark it as high priority and add additional details if needed
+															</td>
+															<td style="text-align:center;">
+																If CRM still has no response after 14 business days, send the CRM to supports for escalation. 
+															</td>
+															<td style="text-align:center;">
+																If an outbound has been done and resolution was given close the CRM 
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<p style="text-align: center;"><b>3. Deceased Patient notification call</b></p>
+																<ul>
+																	<li>
+																		Balances under $100.00 will be written off by the
+																		collection team, if there is no bad debt on the
+																		account; the deceased write off will be used.
+																	</li>
+																	<li>
+																		The collection team will review that insurance has
+																		been billed. Any requests for consideration from
+																		the family will be reviewed by management to
+																		determine any further write offs. <b>(P CRM OPTUM COLLECTIONS - RECALL REVIEW - 13201)</b>
+																	</li>
+																</ul>
+															</td>
+															<td style="text-align:center;">
+																Still pending for more than 7-14 days: <br>
+																Mark it as high priority and add additional details if needed
+															</td>
+															<td style="text-align:center;">
+																If CRM still has no response after 14 business days, send the CRM to supports for escalation. 
+															</td>
+															<td style="text-align:center;">
+																If an outbound has been done and resolution was given close the CRM 
+															</td>
+														</tr>
+														<tr>
+															<td><b>Payment Plan Exception (P CRM OPTUM CS PAYMENT PLAN EXCEPTION - 11778)</b></td>
+															<td>
+																<p style="text-align: center;"><b> Patient enrolled for Out of Guidelines Payment Plan
+																	After it has been determined that the patient is eligible for Payment Plan exception</b> <br>
+																	Document required information : </p>
+																<ol type="i">
+																	<li>Guarantor Name</li>
+																	<li>Family Size Claimed on Taxes:</li>
+																	<li>Household Income (Pre-Tax)</li>
+																	<li>Requested Monthly Payment Amount: <br> Minimum payment must be equal to or greater than $25.00</li>
+																	<li>Credit Card Ending _____ authorized for withdrawal. <br> No exceptions on Auto Pay allowed for out of guideline terms.</li>
+																</ol>
+																Process initial paymnent and create CRM for requested Payment Plan.
+															</td>
+															<td style="text-align:center;">
+																Still pending for more than 7-14 days: <br>
+																Mark it as high priority and add additional details if needed
+															</td>
+															<td style="text-align:center;">
+																If CRM still has no response after 14 business days, send the CRM to supports for escalation. 
+															</td>
+															<td style="text-align:center;">
+																If an outbound has been done and resolution was given close the CRM 
+															</td>
+														</tr>
+														<tr>
+															<td rowspan="3"><b>Itemized Bill (P CRM OPTUM CS - ITEMIZED BILL REQUEST - 50032)</b></td>
+															<td>
+																<p style="text-align: center;"><b>1. Patient is asking for a copy of Itemized Bill</b> <br>
+																Note: Please verify how it will be sent as it can either be sent my mail or posted to Mychart only</p>
+															</td>
+															<td style="text-align:center;">
+																Still pending for more than 7-14 days: <br>
+																Mark it as high priority and add additional details if needed
+															</td>
+															<td style="text-align:center;">
+																If CRM still has no response after 14 business days, send the CRM to supports for escalation. 
+															</td>
+															<td style="text-align:center;">
+																If Itemized bill has been sent then close CRM
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<p style="text-align: center;"><b>2. Patient is asking for a copy of Itemized Receipt</b> <br>
+																	Note: Please verify how it will be sent as it can either be sent my mail or posted to Mychart only</p>
+															</td>
+															<td style="text-align:center;">
+																Still pending for more than 7-14 days: <br>
+																Mark it as high priority and add additional details if needed
+															</td>
+															<td style="text-align:center;">
+																If CRM still has no response after 14 business days, send the CRM to supports for escalation. 
+															</td>
+															<td style="text-align:center;">
+																If Itemized bill has been sent then close CRM
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<p style="text-align: center;"><b>3.  Patient is asking for a copy of Receipt</b> <br>
+																	Note: Please verify how it will be sent as it can either be sent my mail or posted to Mychart only</p>
+															</td>
+															<td style="text-align:center;">
+																Still pending for more than 7-14 days: <br>
+																Mark it as high priority and add additional details if needed
+															</td>
+															<td style="text-align:center;">
+																If CRM still has no response after 14 business days, send the CRM to supports for escalation. 
+															</td>
+															<td style="text-align:center;">
+																If Itemized bill has been sent then close CRM
+															</td>
+														</tr>
+														<tr>
+															<td><b>W9 Request (P CRM OPTUM CS - W9 REQUESTS - 11075)</b></td>
+															<td>
+																<p style="text-align: center;"><b>1. Patient is asking for a W9 to update provider's information to their insurance</b></p>
+															</td>
+															<td style="text-align:center;">
+																Still pending for more than 7-14 days: <br>
+																Mark it as high priority and add additional details if needed
+															</td>
+															<td style="text-align:center;">
+																If CRM still has no response after 14 business days, send the CRM to supports for escalation. 
+															</td>
+															<td style="text-align:center;">
+																If W9 has been sent then close CRM 
+															</td>
+														</tr>
+														<tr>
+															<td><b>HCFA (P OPTUM SUPPORT STAFF HCFA/1500 REQUESTS - 50033)</b></td>
+															<td>
+																<p style="text-align: center;"><b>1. Patient would like to get a copy of the Claim form so that they can send it to their third party insurance, Part D insurance or other third party liable</b></p>
+															</td>
+															<td style="text-align:center;">
+																Still pending for more than 7-14 days: <br>
+																Mark it as high priority and add additional details if needed
+															</td>
+															<td style="text-align:center;">
+																If CRM still has no response after 14 business days, send the CRM to supports for escalation. 
+															</td>
+															<td style="text-align:center;">
+																If HCFA form has been sent then close CRM
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+
+                                        </div>
+                                    </div>
+                                    
+								</div>
+							</div>
+						</div>
+					</div>
+			</main>
+
+			<footer class="footer">
+				<div class="container-fluid">
+					<div class="row text-muted">
+						<div class="col-6 text-start">
+							<p class="mb-0">
+
+							</p>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</div>
+
+	<script src="js/app.js"></script>
+
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			var ctx = document.getElementById("chartjs-dashboard-line").getContext("2d");
+			var gradient = ctx.createLinearGradient(0, 0, 0, 225);
+			gradient.addColorStop(0, "rgba(215, 227, 244, 1)");
+			gradient.addColorStop(1, "rgba(215, 227, 244, 0)");
+			// Line chart
+			new Chart(document.getElementById("chartjs-dashboard-line"), {
+				type: "line",
+				data: {
+					labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+					datasets: [{
+						label: "Sales ($)",
+						fill: true,
+						backgroundColor: gradient,
+						borderColor: window.theme.primary,
+						data: [
+							2115,
+							1562,
+							1584,
+							1892,
+							1587,
+							1923,
+							2566,
+							2448,
+							2805,
+							3438,
+							2917,
+							3327
+						]
+					}]
+				},
+				options: {
+					maintainAspectRatio: false,
+					legend: {
+						display: false
+					},
+					tooltips: {
+						intersect: false
+					},
+					hover: {
+						intersect: true
+					},
+					plugins: {
+						filler: {
+							propagate: false
+						}
+					},
+					scales: {
+						xAxes: [{
+							reverse: true,
+							gridLines: {
+								color: "rgba(0,0,0,0.0)"
+							}
+						}],
+						yAxes: [{
+							ticks: {
+								stepSize: 1000
+							},
+							display: true,
+							borderDash: [3, 3],
+							gridLines: {
+								color: "rgba(0,0,0,0.0)"
+							}
+						}]
+					}
+				}
+			});
+		});
+	</script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			// Pie chart
+			new Chart(document.getElementById("chartjs-dashboard-pie"), {
+				type: "pie",
+				data: {
+					labels: ["Chrome", "Firefox", "IE"],
+					datasets: [{
+						data: [4306, 3801, 1689],
+						backgroundColor: [
+							window.theme.primary,
+							window.theme.warning,
+							window.theme.danger
+						],
+						borderWidth: 5
+					}]
+				},
+				options: {
+					responsive: !window.MSInputMethodContext,
+					maintainAspectRatio: false,
+					legend: {
+						display: false
+					},
+					cutoutPercentage: 75
+				}
+			});
+		});
+	</script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			// Bar chart
+			new Chart(document.getElementById("chartjs-dashboard-bar"), {
+				type: "bar",
+				data: {
+					labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+					datasets: [{
+						label: "This year",
+						backgroundColor: window.theme.primary,
+						borderColor: window.theme.primary,
+						hoverBackgroundColor: window.theme.primary,
+						hoverBorderColor: window.theme.primary,
+						data: [54, 67, 41, 55, 62, 45, 55, 73, 60, 76, 48, 79],
+						barPercentage: .75,
+						categoryPercentage: .5
+					}]
+				},
+				options: {
+					maintainAspectRatio: false,
+					legend: {
+						display: false
+					},
+					scales: {
+						yAxes: [{
+							gridLines: {
+								display: false
+							},
+							stacked: false,
+							ticks: {
+								stepSize: 20
+							}
+						}],
+						xAxes: [{
+							stacked: false,
+							gridLines: {
+								color: "transparent"
+							}
+						}]
+					}
+				}
+			});
+		});
+	</script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			var markers = [{
+					coords: [31.230391, 121.473701],
+					name: "Shanghai"
+				},
+				{
+					coords: [28.704060, 77.102493],
+					name: "Delhi"
+				},
+				{
+					coords: [6.524379, 3.379206],
+					name: "Lagos"
+				},
+				{
+					coords: [35.689487, 139.691711],
+					name: "Tokyo"
+				},
+				{
+					coords: [23.129110, 113.264381],
+					name: "Guangzhou"
+				},
+				{
+					coords: [40.7127837, -74.0059413],
+					name: "New York"
+				},
+				{
+					coords: [34.052235, -118.243683],
+					name: "Los Angeles"
+				},
+				{
+					coords: [41.878113, -87.629799],
+					name: "Chicago"
+				},
+				{
+					coords: [51.507351, -0.127758],
+					name: "London"
+				},
+				{
+					coords: [40.416775, -3.703790],
+					name: "Madrid "
+				}
+			];
+			var map = new jsVectorMap({
+				map: "world",
+				selector: "#world_map",
+				zoomButtons: true,
+				markers: markers,
+				markerStyle: {
+					initial: {
+						r: 9,
+						strokeWidth: 7,
+						stokeOpacity: .4,
+						fill: window.theme.primary
+					},
+					hover: {
+						fill: window.theme.primary,
+						stroke: window.theme.primary
+					}
+				},
+				zoomOnScroll: false
+			});
+			window.addEventListener("resize", () => {
+				map.updateSize();
+			});
+		});
+	</script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			var date = new Date(Date.now() - 5 * 24 * 60 * 60 * 1000);
+			var defaultDate = date.getUTCFullYear() + "-" + (date.getUTCMonth() + 1) + "-" + date.getUTCDate();
+			document.getElementById("datetimepicker-dashboard").flatpickr({
+				inline: true,
+				prevArrow: "<span title=\"Previous month\">&laquo;</span>",
+				nextArrow: "<span title=\"Next month\">&raquo;</span>",
+				defaultDate: defaultDate
+			});
+		});
+	</script>
+	<script>
+		function openCF(evt, CallFlow) {
+		  var i, tabcontent, tablinks;
+		  tabcontent = document.getElementsByClassName("tabcontent");
+		  for (i = 0; i < tabcontent.length; i++) {
+			tabcontent[i].style.display = "none";
+		  }
+		  tablinks = document.getElementsByClassName("tablinks");
+		  for (i = 0; i < tablinks.length; i++) {
+			tablinks[i].className = tablinks[i].className.replace(" active", "");
+		  }
+		  document.getElementById(CallFlow).style.display = "block";
+		  evt.currentTarget.className += " active";
+		}
+	</script>
+</body>
+
+</html>

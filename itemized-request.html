@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Duly Consolidated Process">
+	<meta name="author" content="AdminKit">
+	<meta name="keywords" content="adminkit, bootstrap, bootstrap 5, admin, dashboard, template, responsive, css, sass, html, theme, front-end, ui kit, web">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="shortcut icon" href="img/logo.png"/>
+
+	<link rel="canonical" href="https://demo-basic.adminkit.io/" />
+
+	<title>DHC</title>
+
+	<link href="css/app.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js" rel="stylesheet">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	
+
+	<link rel="stylesheet" href="https://cdn.datatables.net/1.10.2/css/jquery.dataTables.min.css">
+	<script type="text/javascript" src="https://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
+
+    <style>
+        #example{
+        font-size: 18px;
+        }
+        .column {
+        float: left;
+        width: 50%;
+        }
+        .row_2:after {
+        content: "";
+        display: table;
+        clear: both;
+        }
+    </style>
+
+</head>
+
+<body>
+	<div class="wrapper">
+		<nav id="sidebar" class="sidebar js-sidebar">
+			<div class="sidebar-content js-simplebar">
+				<a class="sidebar-brand" href="index.html">
+          <span class="align-middle"><img src="img/duly_white_logo.png" width="130px" height="50px"></span>
+        </a>
+
+				<ul class="sidebar-nav">
+					<li class="sidebar-header">
+						Pages
+					</li>
+
+					<li class="sidebar-item active">
+						<a class="sidebar-link" href="index.html">
+              <i class="align-middle" data-feather="sliders"></i> <span class="align-middle">Dashboard</span>
+            </a>
+					
+					<li class="sidebar-header">
+						Process A-C
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="bad-debt-suspension.html">
+              	<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Bad Debt Suspension</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="bankruptcy.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Bankruptcy</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="billing-process.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Billing Process</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="callback-process.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Callback Process</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="coding.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Coding</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="CRM-routing-pools.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">CRM Routing Pools</span>
+            </a>
+					</li>
+
+					<li class="sidebar-header">
+						Process D-F
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="divorce.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Divorce</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="deceased.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Deceased</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="denials.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Denials</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="duly-employee.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Duly Employee</span>
+				</a>
+					</li>
+					
+					<li class="sidebar-header">
+						Process G-I
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="Financial-Counselors.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Financial Counselors</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="FH-vs-FN.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">FH vs. FN</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="HIPAA-cheat-sheet.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">HIPAA Cheat Sheet</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="itemized-request.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Itemized Request</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="insurance-follow-up.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Insurance Follow-up</span>
+            </a>
+					</li>
+
+					<li class="sidebar-header">
+						Process J-L
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="LabCorp-vs-Duly.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Lab Corp vs. Duly</span>
+            </a>
+					</li>
+
+					<li class="sidebar-header">
+						Process M-O
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="missing-payment-inquiry.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Missing Payment</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="MyChart-IT.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">My Chart</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="Medicare.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Medicare</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="NSF.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">NSF</span>
+            </a>
+					</li>
+
+					<li class="sidebar-header">
+						Process P-R
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="Payment-Plan.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Payment Plan</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="phone-numbers.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Phone Number</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="Plainfield-Surgical-Center.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Plainfield SC (SA 11)</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="Registration.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Registration</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="Refund.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Refund</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="Return-Mail-vs-HIPAA-Breach.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Return Mail vs. HIPAA Breach</span>
+            </a>
+					</li>
+
+					<li class="sidebar-header">
+						Process S-U
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="Service-Areas.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Service Areas</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="third-party-liability.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Third Party Liability</span>
+            </a>
+					</li>
+
+				</ul>
+
+			</div>
+		</nav>
+
+		<div class="main">
+			<nav class="navbar navbar-expand navbar-light navbar-bg">
+				<a class="sidebar-toggle js-sidebar-toggle">
+          <i class="hamburger align-self-center"></i>
+        </a>
+			</nav>
+			
+			<main class="content">
+				<div class="container-fluid p-0">
+
+					<h1 class="h3 mb-3" style="color: #3652A0;"><strong>Itemized Requests</strong></h1>
+
+                    <div class="row">
+						<div class="col-12">
+							<div class="card">
+								<div class="card-body">
+                                    <p style="color: #3652A0;font-size: 18px;padding-bottom: 30px;"><strong>What's the difference of Copy of Receipt, Itemized Receipt, and Itemized Bill?</strong></p>
+                                    <div class="row_2">
+                                        <div class="column" style="padding-right: 30px;">
+                                            <p style="font-size: 16px;padding-bottom: 20px;text-align: justify;"><strong>Copy of Receipt</strong> - contains the <span style="color: green;">patient payment, method used and authorization</span> that was originally sent to their email address when they made the payment.</p>
+                                            <p style="font-size: 16px;padding-bottom: 20px;text-align: justify;"><strong>Itemized Receipt</strong> - is a detailed payment receipt that contains <span style="color: red;">Service Date, Procedure, Charges, Payment posting date, Payment from patient, Matching amount from the
+                                                payment, Payment method and Receipt number and Authorization code.</span></p>
+                                            <p style="font-size: 16px;padding-bottom: 20px;text-align: justify;"><strong>Itemized Bill</strong> - is a detailed bill that contains <span style="color: blue;">Service Date, Charges, Procedure, Diagnoses if patient requested, Payment from insurance, Adjustments and Physician
+                                                name if available.</span></p>
+                                        </div>
+                                        <div class="column" style="padding-left: 30px;">
+                                            <p style="color: black;font-size: 16px;"><strong>Definitions:</strong></p>
+                                            <p style="font-size: 16px;padding-bottom: 20px;color: black;text-align: justify;">HCFA 1500 form - This is a standard health insurance claim form used for submitting physician and professional claims to bill the health insurance company.</p>
+                                            <p style="font-size: 16px;padding-bottom: 20px;color: black;">Itemized Bill - A full list of charges/cost for each item.</p>
+                                            <p style="font-size: 16px;padding-bottom: 20px;color: black;text-align: justify;">W9 form - a W-9 form is a standardized legal document used to collect tax ID and EIN numbers. Completing and submitting Internal Revenue Service (IRS) Form W-9
+                                                to third party payers is an important part of timely reimbursement in the revenue cycle of medical providers.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <p style="color: #3652A0;font-size: 18px;padding-bottom: 5px;"><strong>How to request Copy of Receipt, Itemized Receipt, and Itemized Bill?</strong></p>
+
+                                    <div class="how-to-request" style="width:50%;font-size: 16px;">
+                                        <p><strong>Copy of Receipt</strong></p>
+                                        <p style="padding-bottom: 25px;text-align: justify;">Create CRM for the copy of receipt and route it to the Itemized Billing requests pool (50032). Make sure to follow the template below so our onshore rep will be aware
+                                            of what your request is about: <br>
+                                            "<span style="color: green;">Patient requests for a copy of receipt</span> to be sent thru (indicate if Mychart or mailing address). <br>
+                                            Payment Post Date: MM/DD/YY - MM/DD/YY"
+                                        </p>
+                                    
+                                        <p><strong>Itemized Receipt</strong></p>
+                                        <p style="padding-bottom: 25px;text-align: justify;">Create CRM and route it to the Itemized Billing requests pool (50032). Make sure to follow the template below so our onshore rep will be aware
+                                            of what your request is about: <br>
+                                            "<span style="color: red;">Patient requests for itemized receipt</span> to be sent thru (indicate if Mychart or mailing address). <br>
+                                            Payment Post Date: MM/DD/YY - MM/DD/YY or for the whole year of 20XX"
+                                        </p>
+                                    
+                                        <p><strong>Itemized Bill</strong></p>
+                                        <p style="padding-bottom: 25px;text-align: justify;">Create CRM and route it to the Itemized Billing requests pool (50032). Make sure to follow the template below so our onshore rep will be aware
+                                            of what your request is about: <br>
+                                            "<span style="color: blue;">Patient requests for itemized bill/statement</span> to be sent thru (indicate if Mychart or mailing address). <br>
+                                            Statement Date Range: MM/DD/YY - MM/DD/YY or for the whole year of 20XX"
+                                        </p>
+                                    </div>
+                                    <p style="background-color: yellow;width: 250px;color: black;font-size: 16px;"><strong>Reminder to all itemized request</strong></p>
+                                        <p style="font-size: 16px;"><i>Date should be on number format not words. Do not include the receipt number/authorization code/invoice number/unnecessary requests.</i></p>
+								</div>
+
+					<div class="itemized" style="font-size: 16px;padding-left:20px;">
+						<p style="font-weight:bold;font-size:18px;color:black;">
+							Scenario (Copy of Receipt): If the patient is requesting for a receipt he made 
+							from their previous payment, you can do the following:	
+							<ol style="width:50%;">
+								<li>
+									Go to Payment tab > Locate the payment date > Expand the payment details > Check if there’s receipt number (PDF) and payment confirmation sent before. Please see image below:
+								</li>
+								<img src="img/itm1.png" style="width:150%;height:100%;padding-top:15px;">
+								<li style="padding-top:20px;">
+									After checking, you can create CRM for the copy of receipt and route it to the Itemized Billing requests pool (50032). Make sure to follow the template below so our onshore rep will be aware of what your request is about:
+								</li>
+								<p style="padding-top:10px;">
+									"Patient requests for a copy of receipt to be sent again thru (indicate if Mychart or mailing address). <br>
+									Payment Post Date: MM/DD/YY – MM/DD/YY" <br>
+								</p>
+								<p style="font-weight:bold;font-size:18px;color:black;">Example of copy of receipt:</p>
+								<img src="img/itm2.png" style="width:60%;height:70%;padding-top:5px;">
+							</ol>
+						</p>
+
+						<p style="font-weight:bold;font-size:18px;color:black;">
+							Scenario (Itemized Statement/Bill Request): If the patient is requesting for an itemized statement for specific procedure that includes their payment and insurance payment 
+							(diagnosis and provider if patient requests), you may do the following:
+							<ol style="width:50%;">
+								<li>
+									Create CRM and route it to the Itemized Billing requests pool (50032). Make sure to follow the template below so our onshore rep will be aware of what your request is about:
+								</li>
+								<p style="padding-top:10px;">
+									"Patient requests for itemized statement request to be sent thru (indicate if Mychart or mail address). <br>
+									Statement Date Range: MM/DD/YY – MM/DD/YY or for the whole year of 20XX"
+								</p>
+								<p style="font-weight:bold;font-size:18px;color:black;">Example of Itemized Statement/Bill:</p>
+								<img src="img/itm3.png" style="width:60%;height:70%;padding-top:5px;">
+							</ol>
+						</p>
+
+						<p style="font-weight:bold;font-size:18px;color:black;">
+							Scenario (Itemized Receipt Request): If the patient is requesting for an itemized receipt for specific procedure that includes their payment and insurance payment, 
+							you may do the following:
+							<ol style="width:50%;">
+								<li>
+									Create CRM and route it to the Itemized Billing requests pool (50032). Make sure to follow the template below so our onshore rep will be aware of what your request is about:
+								</li>
+								<p style="padding-top:10px;">
+									"Patient requests for itemized statement request to be sent thru (indicate if Mychart or mail address). <br>
+									Payment Post Date: MM/DD/YY – MM/DD/YY or for the whole year of 20XX"
+								</p>
+							</ol>
+						</p>
+
+						<p style="font-weight:bold;font-size:18px;color:black;padding-top: 20px;">What’s the difference of Copy of Receipt, Itemized Receipt, and Itemized Bill?</p>
+						<p>
+							<span style="font-weight:bold;color:black;">Copy of Receipt</span> - contains the patient payment, method used and authorization that was originally sent to their email address when they made the payment. 
+						</p>
+						<p><span style="font-weight:bold;color:black;">Itemized Statement</span> -is a detailed bill that contains the following:</p>
+							<ol>
+								<li>Service Date</li>
+								<li>Charges</li>
+								<li>Procedure</li>
+								<li>Diagnoses if patient requested</li>
+								<li>Payment from insurance</li>
+								<li>Payment from patient</li>
+								<li>Adjustments</li>
+								<li>Physician name if available</li>
+							</ol>
+						<p>For easier understanding, these are the details that you’ll see when you click the <span style="font-weight:bold;">Service Date</span> from Payment tab. Please see image below:</p>
+						<img src="img/itm4.png" style="width:40%;height:40%;padding-top:5px;padding-left:20px;"> <br>
+						<img src="img/itm5.png" style="width:70%;height:70%;padding-top:15px;padding-left:20px;"> <br>
+						<p style="padding-top:30px;"><span style="font-weight:bold;color:black;">Itemized Receipt</span> - is a detailed payment receipt that contains the following:</p>
+							<ol>
+								<li>Service Date</li>
+								<li>Procedure</li>
+								<li>Charges</li>
+								<li>Payment posting date</li>
+								<li>Payment from patient</li>
+								<li>Matching amount from the patient</li>
+								<li>Payment method</li>
+								<li>Receipt number</li>
+								<li>Authorization code</li>
+							</ol>
+						<p>For easier understanding, these are the details that you’ll see when you click the <span style="font-weight:bold;">Orig Post Date</span> from Payment tab. Please see image below: </p>
+						<img src="img/itm6.png" style="width:40%;height:40%;padding-top:5px;padding-left:20px;"> <br>
+						<img src="img/itm7.png" style="width:70%;height:70%;padding-top:15px;padding-left:20px;"> <br>
+					</div>
+							</div>
+						</div>
+					</div>
+			</main>
+
+			<footer class="footer">
+				<div class="container-fluid">
+					<div class="row text-muted">
+						<div class="col-6 text-start">
+							<p class="mb-0">
+
+							</p>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</div>
+
+	<script src="js/app.js"></script>
+
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			var ctx = document.getElementById("chartjs-dashboard-line").getContext("2d");
+			var gradient = ctx.createLinearGradient(0, 0, 0, 225);
+			gradient.addColorStop(0, "rgba(215, 227, 244, 1)");
+			gradient.addColorStop(1, "rgba(215, 227, 244, 0)");
+			// Line chart
+			new Chart(document.getElementById("chartjs-dashboard-line"), {
+				type: "line",
+				data: {
+					labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+					datasets: [{
+						label: "Sales ($)",
+						fill: true,
+						backgroundColor: gradient,
+						borderColor: window.theme.primary,
+						data: [
+							2115,
+							1562,
+							1584,
+							1892,
+							1587,
+							1923,
+							2566,
+							2448,
+							2805,
+							3438,
+							2917,
+							3327
+						]
+					}]
+				},
+				options: {
+					maintainAspectRatio: false,
+					legend: {
+						display: false
+					},
+					tooltips: {
+						intersect: false
+					},
+					hover: {
+						intersect: true
+					},
+					plugins: {
+						filler: {
+							propagate: false
+						}
+					},
+					scales: {
+						xAxes: [{
+							reverse: true,
+							gridLines: {
+								color: "rgba(0,0,0,0.0)"
+							}
+						}],
+						yAxes: [{
+							ticks: {
+								stepSize: 1000
+							},
+							display: true,
+							borderDash: [3, 3],
+							gridLines: {
+								color: "rgba(0,0,0,0.0)"
+							}
+						}]
+					}
+				}
+			});
+		});
+	</script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			// Pie chart
+			new Chart(document.getElementById("chartjs-dashboard-pie"), {
+				type: "pie",
+				data: {
+					labels: ["Chrome", "Firefox", "IE"],
+					datasets: [{
+						data: [4306, 3801, 1689],
+						backgroundColor: [
+							window.theme.primary,
+							window.theme.warning,
+							window.theme.danger
+						],
+						borderWidth: 5
+					}]
+				},
+				options: {
+					responsive: !window.MSInputMethodContext,
+					maintainAspectRatio: false,
+					legend: {
+						display: false
+					},
+					cutoutPercentage: 75
+				}
+			});
+		});
+	</script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			// Bar chart
+			new Chart(document.getElementById("chartjs-dashboard-bar"), {
+				type: "bar",
+				data: {
+					labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+					datasets: [{
+						label: "This year",
+						backgroundColor: window.theme.primary,
+						borderColor: window.theme.primary,
+						hoverBackgroundColor: window.theme.primary,
+						hoverBorderColor: window.theme.primary,
+						data: [54, 67, 41, 55, 62, 45, 55, 73, 60, 76, 48, 79],
+						barPercentage: .75,
+						categoryPercentage: .5
+					}]
+				},
+				options: {
+					maintainAspectRatio: false,
+					legend: {
+						display: false
+					},
+					scales: {
+						yAxes: [{
+							gridLines: {
+								display: false
+							},
+							stacked: false,
+							ticks: {
+								stepSize: 20
+							}
+						}],
+						xAxes: [{
+							stacked: false,
+							gridLines: {
+								color: "transparent"
+							}
+						}]
+					}
+				}
+			});
+		});
+	</script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			var markers = [{
+					coords: [31.230391, 121.473701],
+					name: "Shanghai"
+				},
+				{
+					coords: [28.704060, 77.102493],
+					name: "Delhi"
+				},
+				{
+					coords: [6.524379, 3.379206],
+					name: "Lagos"
+				},
+				{
+					coords: [35.689487, 139.691711],
+					name: "Tokyo"
+				},
+				{
+					coords: [23.129110, 113.264381],
+					name: "Guangzhou"
+				},
+				{
+					coords: [40.7127837, -74.0059413],
+					name: "New York"
+				},
+				{
+					coords: [34.052235, -118.243683],
+					name: "Los Angeles"
+				},
+				{
+					coords: [41.878113, -87.629799],
+					name: "Chicago"
+				},
+				{
+					coords: [51.507351, -0.127758],
+					name: "London"
+				},
+				{
+					coords: [40.416775, -3.703790],
+					name: "Madrid "
+				}
+			];
+			var map = new jsVectorMap({
+				map: "world",
+				selector: "#world_map",
+				zoomButtons: true,
+				markers: markers,
+				markerStyle: {
+					initial: {
+						r: 9,
+						strokeWidth: 7,
+						stokeOpacity: .4,
+						fill: window.theme.primary
+					},
+					hover: {
+						fill: window.theme.primary,
+						stroke: window.theme.primary
+					}
+				},
+				zoomOnScroll: false
+			});
+			window.addEventListener("resize", () => {
+				map.updateSize();
+			});
+		});
+	</script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			var date = new Date(Date.now() - 5 * 24 * 60 * 60 * 1000);
+			var defaultDate = date.getUTCFullYear() + "-" + (date.getUTCMonth() + 1) + "-" + date.getUTCDate();
+			document.getElementById("datetimepicker-dashboard").flatpickr({
+				inline: true,
+				prevArrow: "<span title=\"Previous month\">&laquo;</span>",
+				nextArrow: "<span title=\"Next month\">&raquo;</span>",
+				defaultDate: defaultDate
+			});
+		});
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Duly Consolidated Process">
+	<meta name="author" content="AdminKit">
+	<meta name="keywords" content="adminkit, bootstrap, bootstrap 5, admin, dashboard, template, responsive, css, sass, html, theme, front-end, ui kit, web">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="shortcut icon" href="img/logo.png"/>
+
+	<link rel="canonical" href="https://demo-basic.adminkit.io/" />
+
+	<title>DHC</title>
+
+	<link href="css/app.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+	<style>
+		.tab {
+		overflow: hidden;
+		border: 1px solid #ccc;
+		background-color: #f1f1f1;
+		}
+		.tab button {
+		background-color: inherit;
+		float: left;
+		border: none;
+		outline: none;
+		cursor: pointer;
+		padding: 14px 16px;
+		transition: 0.3s;
+		font-size: 17px;
+		}
+		.tab button.active {
+		background-color: #ccc;
+		}
+		.tabcontent {
+		display: none;
+		padding: 6px 12px;
+		border: 1px solid #ccc;
+		border-top: none;
+		}
+	</style>
+
+</head>
+
+<body>
+	<div class="wrapper">
+		<nav id="sidebar" class="sidebar js-sidebar">
+			<div class="sidebar-content js-simplebar">
+				<a class="sidebar-brand" href="index.html">
+          <span class="align-middle"><img src="img/duly_white_logo.png" width="130px" height="50px"></span>
+        </a>
+
+				<ul class="sidebar-nav">
+					<li class="sidebar-header">
+						Pages
+					</li>
+
+					<li class="sidebar-item active">
+						<a class="sidebar-link" href="index.html">
+              <i class="align-middle" data-feather="sliders"></i> <span class="align-middle">Dashboard</span>
+            </a>
+					
+					<li class="sidebar-header">
+						Process A-C
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="bad-debt-suspension.html">
+              	<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Bad Debt Suspension</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="bankruptcy.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Bankruptcy</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="billing-process.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Billing Process</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="callback-process.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Callback Process</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="coding.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Coding</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="CRM-routing-pools.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">CRM Routing Pools</span>
+            </a>
+					</li>
+
+					<li class="sidebar-header">
+						Process D-F
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="divorce.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Divorce</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="deceased.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Deceased</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="denials.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Denials</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="duly-employee.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Duly Employee</span>
+				</a>
+					</li>
+					
+					<li class="sidebar-header">
+						Process G-I
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="Financial-Counselors.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Financial Counselors</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="FH-vs-FN.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">FH vs. FN</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="HIPAA-cheat-sheet.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">HIPAA Cheat Sheet</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="itemized-request.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Itemized Request</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="insurance-follow-up.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Insurance Follow-up</span>
+            </a>
+					</li>
+
+					<li class="sidebar-header">
+						Process J-L
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="LabCorp-vs-Duly.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Lab Corp vs. Duly</span>
+            </a>
+					</li>
+
+					<li class="sidebar-header">
+						Process M-O
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="missing-payment-inquiry.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Missing Payment</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="MyChart-IT.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">My Chart</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="Medicare.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Medicare</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="NSF.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">NSF</span>
+            </a>
+					</li>
+
+					<li class="sidebar-header">
+						Process P-R
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="Payment-Plan.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Payment Plan</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="phone-numbers.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Phone Number</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="Plainfield-Surgical-Center.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Plainfield SC (SA 11)</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="Registration.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Registration</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="Refund.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Refund</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="Return-Mail-vs-HIPAA-Breach.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Return Mail vs. HIPAA Breach</span>
+            </a>
+					</li>
+
+					<li class="sidebar-header">
+						Process S-U
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="Service-Areas.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Service Areas</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="third-party-liability.html">
+				<i class="align-middle" data-feather="arrow-right-circle"></i> <span class="align-middle">Third Party Liability</span>
+            </a>
+					</li>
+
+				</ul>
+
+			</div>
+		</nav>
+
+		<div class="main">
+			<nav class="navbar navbar-expand navbar-light navbar-bg">
+				<a class="sidebar-toggle js-sidebar-toggle">
+          <i class="hamburger align-self-center"></i>
+        </a>
+			</nav>
+
+			<main class="content">
+				<div class="container-fluid p-0">
+
+					<h1 class="h3 mb-3"><strong><span style="color: #3652A0;">Call Flow Tip Sheet </span></strong> / Dashboard</h1>
+
+					<div class="row">
+							<div class="w-100">
+								<div class="row">
+									<div class="col-sm-12">
+										<div class="card">
+											<div class="card-body">
+												<h2 style="font-weight: bold;">Call Flow Tabs</h2>
+												<p style="font-size: 16px;color: red;">Click on the buttons inside the tabbed menu</p>
+
+												<div class="tab">
+													<button class="tablinks" onclick="openCF(event, 'Inbound')">Inbound Call Flow</button>
+													<button class="tablinks" onclick="openCF(event, 'Payment Collection')">Payment Collection Rebuttals</button>
+													<button class="tablinks" onclick="openCF(event, 'Covid')">Covid Intervention Claim Script</button>
+													<button class="tablinks" onclick="openCF(event, 'Estimate')">GFE Spiel</button>
+													<button class="tablinks" onclick="openCF(event, 'Preventive')">Preventive vs. Office Visit</button>
+													<button class="tablinks" onclick="openCF(event, 'Settlement')">Settlement Payments</button>
+												</div>
+
+												<div id="Inbound" class="tabcontent">
+													<p style="font-size: 16px;"><b>The following guidelines should be followed for all inbound calls.</b></p>
+													<p style="font-size: 16px;">Each call received should be documented on the patients account using activity Optum Inbound FCR [691] or 												create a CRM if additional follow up is needed.</p>
+
+												<table id="example" class="table table-bordered" style="width:60%;font-size:16px;">
+													<thead>
+														<tr>
+															<th class="th-sm" style="text-align:center;width:8%;color:black;background-color:orange;">Step</th>
+															<th class="th-sm" style="text-align:center;width:15%;color:black;background-color:orange;">Instructions</th>
+															<th class="th-sm" style="text-align:center;width:20%;color:black;background-color:orange;">Suggested Script</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>Step 1: <br> Opening</td>
+															<td>Deliver the Opening Spiel within 5 seconds</td>
+															<td style="text-align:center;"><i>“Thank you for calling Duly Health and Care. This is ________________. How may I 														assist you?”</i></td>
+														</tr>
+														<tr>
+															<td>Step 2: <br> Acknowledgement</td>
+															<td>Acknowledge the caller’s concern</td>
+															<td style="text-align:center;">
+															<i>“I’ll be happy to _______________________”</i> <br>
+															<i>“Let me assist you on ______________________”</i> <br>
+															<p style="padding-top: 15px;"><b>For example:</b> <i>“I’ll be happy to update your insurance information.”</i></p>
+															</td>
+														</tr>
+														<tr>
+															<td>Step 3: <br> Authentication</td>
+															<td>
+																<p>HIPAA Verify the account</p>
+																<p>Note: Obtain parent’s full name if they call regarding a minor (child) account.</p>
+															<ul>
+																<li>
+																For third party caller, check for HIPAA consent form on file. If none, verbal authorization from the patient is required and that is for one time use only.
+																</li>
+																<li>
+																When caller is spouse of patient then provide financial responsibilities only as open balance and payments.
+																</li>
+																<li>
+																When caller is calling from the law office, ask for HIPAA consent to be sent through email to 																			<span style="color:blue;"><u>collections@duly.com</u></span> and fax to 630-469-9686.
+																</li>
+																<li>
+																When caller is insurance representative, check the date of service in question and we can proceed once it is assured 															that the same insurance is billed for that date of service.
+																</li>
+																<li>
+																When patient wants to add authorized person on the account, HIPAA consent form needs to be submitted through <span style="color:blue;"><u>MyChart 															- Login Page (dupagemd.com)</u></span> or send the form through email to 
+																<span style="color:blue;"><u>collections@duly.com</u></span> and fax to 630-469-9686.
+																</li>
+																<li>
+																For HIPAA consent form, patient can refer to <span style="color:blue;"><u>HIPAA Privacy Practices & Forms 
+																| Duly Health and Care - DuPage Medical Group.</u></span>
+																</li>
+															</ul>
+															<p style="color:red;">Associate should not disclose any Personal Health Information to any un-authorized person including 															third party callers.</p>
+															</td>
+															<td style="text-align:center;">
+																<b>Patient is the Caller:</b> <br>
+																<p style="padding-bottom: 25px;"><i>"For security purposes may I have your name and 
+																	Date of Birth please?"
+																	"May I also have your full address" 
+																	(Or any of the ff: phone number or last four of member's SSN).</i></p>
+
+																<b>Obtain Caller’s Callback Number:</b> <br>
+																<p style="padding-bottom: 25px;"><i>“May I have your callback number, please?”</i></p>
+
+																<b>Caller is not the patient:</b> <br>
+																<p><i>"May I have your full name?"</i></p>
+																<p><i>"May I know your relationship with the patient"</i></p>
+															</td>
+														</tr>
+														<tr>
+															<td>Step 4: <br> Address Concerns</td>
+															<td>Address Caller’s Concerns</td>
+															<td></td>
+														</tr>
+														<tr>
+															<td>Step 5: <br> Recap/Payment Collection</td>
+															<td>Recap actions taken and/or key points discussed during the call and provide outstanding balance and request payment</td>
+															<td>
+															<p style="text-align:center;"><b>End of Call Script</b></p>
+															<p style="color:blue;text-align:center;padding-bottom: 25px;">
+															<i>
+																“I have taken the following actions on your account (insert actions) when reviewing I can see that you have an outstanding balance of $____________. Are you able to pay in 															full today or can I help you set up a payment plan? 
+															</i>
+															</p>
+															<p style="text-align:center;"><b>Bad Debt Balances</b></p>
+															<p style="color:blue;text-align:center;padding-bottom: 25px;">
+															<i>
+																"I am not sure if you are aware but you also have a balance
+															of $_____ with the collection agency. If you would like I can accept
+															payment in full today."
+															</i> <br>
+															<p style="color:blue;">Payments Plans must be referred to the
+															collection agency.</p>
+															<p style="color:blue;text-align:center;">NCC - 630-528-5100 <br>
+															Merchants 888-249-3811</p>
+															</p>
+															<p style="text-align:center;padding-top:15px;">
+															<b>Payments</b></p>
+															<p style="text-align:center;padding-bottom: 25px;">
+																If yes, _______ resume with payment details.
+																<span style="color:blue;"><i>“Thank you for your payment, is there anything else I can assist you with today? </span></i>
+															</p>
+															<p style="text-align:center;"><b>Declined – Financial Barrier</b></p>
+															<p style="text-align:center;padding-bottom: 25px;">
+																If no, patient states they are having difficulty making any payments at all. 
+																<span style="color:blue;"><i>“I understand that you are experiencing financial barriers at this time, Duly Health and Care does offer a once-per-lifetime opportunity to 															apply for Financial Hardship where if approved, your balance may be eligible for a 														reduction from 50-100% of your bill. Is this a program you would like to apply for?” </i></span>
+															</p>
+															<p style="text-align:center;padding-bottom: 25px;">Screen patient for financial hardship. Provide patient the information needed to apply, and 														if the patient would like to resume with the application, mark account with FH Pending status 														using the financial hardship activity note.</p>
+															<p style="text-align:center;"><b>Declined Payment Scripting</b></p>
+															<p style="text-align:center;">
+															If no, (review charges to determine if patient is close to collections).
+															<span style="color:blue;"><i>“I understand you are unable to make a payment today. Duly Health and Care Policy states that any unpaid balances may be sent to collections at 120 days 														or after four statements. Please be sure to call us back or set up a formal payment 														arrangement on MyChart.”</i></span>
+															</p>
+															</td>
+														</tr>
+														<tr>
+															<td>Step 6: <br> Closing</td>
+															<td>Offer additional assistance and offer the survey</td>
+															<td>
+																<p style="text-align:center;"><b>Additional Assistance</b></p>
+															<p style="text-align:center;padding-bottom: 25px;">
+															<span style="color:blue;"><i>“Is there anything else I can assist you with today?”</i></span> <br>
+															If yes, resume with request. <br>
+															If no, Offer Survey
+															</p>
+															<p style="text-align:center;"><b>Survey Offered</b></p>
+															<p style="color:blue;text-align:center;"><i>“Would you be willing to take a brief survey regarding the service I provided you today?</i></p>
+															<p>If no, <span style="color:blue;"><i>“No problem, thank you for calling Duly Health and Care, enjoy the rest of your 														day.”</i></span></p>
+															<p>If yes, <span style="color:blue;"><i>“Thank you for calling Duly Health and Care, please stay on the line while I connect 														you, enjoy the rest of your day.” </i></span></p>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+												</div>
+
+												<div id="Payment Collection" class="tabcontent">
+													<p style="font-size: 16px;"><b>The following guidelines should be followed for all inbound calls.</b></p>
+													<p style="font-size: 16px;">Each call received should be documented on the patients account using activity Optum Inbound FCR [691] 
+													or create a CRM if additional follow up is needed.</p>
+
+													<table id="example" class="table table-bordered" style="width:60%;font-size:16px;">
+														<thead>
+															<tr>
+																<th class="th-sm" style="text-align:center;width:8%;color:black;background-color:orange;">Comment</th>
+																<th class="th-sm" style="text-align:center;width:8%;color:black;background-color:orange;">Suggested Response</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td>I do not owe this balance</td>
+																<td style="color: blue;font-style: italic;text-align: center;">
+																	“Let me look at your Explanation of Benefits, according to your charges your insurance has processed your claims and applied towards your 
+																	[Deductible, coinsurance, copay, etc.]. if you believe your insurance has processed in error, you will need to reach out to your health plan. 
+																	We are unable to hold your account while under review. Duly Health and Care Policy states that any unpaid balances may be sent to 
+																	collections at 120 days or after four statements. Please be sure to call us back or set up a formal payment arrangement on MyChart.”
+																</td>
+															</tr>
+															<tr>
+																<td>I already paid for this balance</td>
+																<td>
+																	<p style="color: blue;font-style: italic;padding-bottom: 10px;text-align: center;">“Let me review your payment history.”</p>
+																	<p style="text-align: center;"><span style="font-weight: bold;">Payment Found:</span> Applied to other outstanding charges <br>
+																		<span style="color: blue;font-style: italic;text-align: justify;">
+																			“After review, I was able to locate your payment. Our system will automatically apply payments to the oldest charges on file, 
+																			let me correct this for you.”</span>
+																			<p style="color: blue;font-style: italic;text-align: justify;">
+																			Note:  Patient’s other charges might be in an intervention and have not been billed to patient at this time.</p>
+																	</p>
+																	<p style="padding-top: 20px;text-align: center;"><span style="font-weight: bold;">Missing Payment:</span> Payment made in the last week <br>
+																		<span style="color: blue;font-style: italic;text-align: center;">
+																			“Thank you for making a payment, we have not received it just yet. Was your payment for the balance in full or will 
+																			you need a payment plan on your account?”
+																		</span>
+																	</p>
+																	<p style="padding-top: 20px;text-align: center;"><span style="font-weight: bold;">Missing Payment:</span> Payment was made 7+ Days Prior <br>
+																		<span style="color: blue;font-style: italic;text-align: center;">
+																			“I do not show that we have received your payment. We can research further with proof of payment. Did you pay by cash, check or credit card?”
+																		</span>
+																	</p>
+																	<p>
+																		<u>Credit Card:</u> Card Type, Last Four Digits, Transaction Number, Method of Payment (online, site etc.)
+																	</p>
+																	<p>
+																		<u>Check Payment:</u> Front and Back of Cashed Check 
+																	</p>
+																	<p>
+																		<u>Cash:</u> Receipt
+																	</p>
+																	<p>
+																		Inform patient to email proof of payment to <span style="color: blue;">collections@duly.com </span>
+																	</p>
+																</td>
+															</tr>
+															<tr>
+																<td>I was never seen</td>
+																<td>
+																	<p style="color: blue;font-style: italic;text-align: center;">“Thank you for that information, to clarify you do not believe the visit to _______ on _________ date occurred?” </p>
+																	Send CRM to Coding Review, if charges are correct, notify compliance
+																</td>
+															</tr>
+															<tr>
+																<td>The doctor did not address my concerns, or I am not paying because the doctor did __________.</td>
+																<td style="color: blue;font-style: italic;text-align: center;">
+																	“I apologize you had that experience. I will send your information to our Patient Experience Team for them to review. You can also reach them directly at 630-456-7484.”
+																</td>
+															</tr>
+															<tr>
+																<td>You cannot bill me now! It has been years!</td>
+																<td style="color: blue;font-style: italic;text-align: center;">
+																	“We apologize for the delay in billing, we have been working with your insurance company for solutions. 
+																	Currently, your balance is your responsibility. Please connect to your insurance company if you would like to dispute further.”
+																</td>
+															</tr>
+															<tr>
+																<td>I am appealing with my insurance company; they told me not to pay.</td>
+																<td style="color: blue;font-style: italic;text-align: center;">
+																	“I understand that you are appealing with your insurance, unfortunately we are unable to hold your account while under dispute. 
+																	We can set up a payment plan if you would not like to pay in full, and if the insurance payments create any overpayment on your 
+																	total account balance it will be refunded to you.”
+																</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+
+												<div id="Covid" class="tabcontent">
+												<p style="font-weight:bold;font-size:18px;">
+													1. Why am I being billed for the COVID-19 vaccine or COVID-19 testing?
+												</p>
+												<p style="font-size:16px;text-align:justify;">
+												<span style="font-weight:bold;">Vaccine:</span>
+												There is no cost for the vaccine itself. There is a fee however to cover the cost of the 												provider administering the vaccine that is billed to your health insurance. Your payor
+												has determined this to be your out-of-pocket cost under your plan's benefits. Please
+												contact your health insurance plan directly for further questions regarding
+												coverage limitations.
+												</p>
+												<p style="font-size:16px;text-align:justify;">
+												<span style="font-weight:bold;">Testing:</span>
+												There is no cost for the vaccine itself. There is a fee however to cover the cost of the 												provider administering the testing that is billed to your health insurance. Your payor
+												has determined this to be your out-of-pocket cost under your plan's benefits. Please
+												contact your health insurance plan directly for further questions regarding
+												coverage limitations.
+												</p>
+												<p style="font-weight:bold;font-size:18px;">
+													2. This visit (vaccine, testing, telehealth, etc.) was so long ago - why are you
+													just now sending me a bill?
+												</p>
+												<p style="font-size:16px;text-align:justify;">
+													"The pandemic has impacted efficient processing for some payors. Duly Health and
+													Care continued to work with your insurance coverage to minimize your out-of-pocket
+													responsibility. At this time, your health insurance coverage has determined this
+													to be your out-of-pocket cost under your plan's benefits. Please contact your
+													health insurance plan directly for further questions regarding coverage limitations."
+												</p>
+												</div>
+
+												<div id="Estimate" class="tabcontent" style="font-size: 16px;text-align: justify;">
+													<p>
+														These amounts are estimates for your upcoming procedure, test or other medical care. It is important to remember that these amounts are subject to change if
+														additional or alternative care and treatment is provided at the time of service. This estimate includes pricing only for the tests ordered or the physician
+														charges for the proposed procedures. Facility, additional lab or diagnostic tests, pathology or anesthesia will be billed separately from this amount.
+													</p>
+													<p>
+														If you have questions, please call care support team at (800) 573-2418 between 8:00am and 4:30pm, Monday through Friday.
+													</p>
+													<p>
+														This estimate is not a contract. You may seek these services elsewhere from other facilities or providers not affiliated with Duly Health and Care.
+													</p>
+													<p>
+														If the patient receives a letter or communication regarding their estimate 														cost for future services , they can call GFE at (800) 573-2418 between 
+													8:00am and 4:30pm, Monday through Friday.
+													</p>
+													
+												</div>
+
+												<div id="Preventive" class="tabcontent" style="text-align:justify;font-size:16px;">
+													<p>
+													<b>Powerful Spiel:</b> When you receive a medical DX/diagnosis, whether it is an old one or 													a new one, it is not seen as preventive. Because of this, an office visit has 															been set up with the same DOS.
+													</p>
+													<p>
+<b>Additional Information:</b> <br>
+A preventative visit is a prevention-focused appointment to prevent illness and detect health concerns early. A preventative visit is not designed to discuss new or existing health problems or symptoms. A preventative visit does not include prescription management, referrals, testing, discussion of new or existing health problems or symptoms.
+													</p>
+													<p>
+													If PT presented for physical AND the provider addressed other chronic issues which are separately billable with a regular E/M; (new diagnosis) PR for charge.  Preventative visits are NOT designed to address chronic and/or acute issues, medications and/or referrals.
+													</p>
+												</div>
+
+												<div id="Settlement" class="tabcontent" style="text-align:justify;font-size:16px;">
+													<p>
+													<b>Note:</b> If you receive any inquiries regarding a Settlement Payment, please direct all questions to the Settlement 															Administrator.  
+													</p>
+													<p style="font-size:16px;">
+													<b><u>Scripting:</u></b>
+													</p>
+													<p style="text-align:justify;font-size:16px;">
+													“The information received was related to a settlement of a class action lawsuit. This information is not coming from Duly Health and 														Care. It is coming from a Class Action Administrator”
+													</p>
+													<p>
+													<b>DuPage Medical Group Data Incident Settlement Administrator</b> <br>
+													1650 Arch Street, Suite 2210 <br>
+													Philadelphia, PA 19103 <br>
+													<b>Phone:</b> <u><span style="color:green;">844-595-0553</span></u> <br>
+													<b>Email:</b> <u><span style="color:green;">Info@DMGSettlement.com</span></u>
+
+													</p>
+												</div>
+
+											</div>
+										</div>
+									</div>
+									
+								</div>
+							</div>
+					</div>
+				</div>
+			</main>
+
+			<footer class="footer">
+				<div class="container-fluid">
+					<div class="row text-muted">
+						<div class="col-6 text-start">
+							<p class="mb-0">
+
+							</p>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</div>
+
+	<script src="js/app.js"></script>
+
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			var ctx = document.getElementById("chartjs-dashboard-line").getContext("2d");
+			var gradient = ctx.createLinearGradient(0, 0, 0, 225);
+			gradient.addColorStop(0, "rgba(215, 227, 244, 1)");
+			gradient.addColorStop(1, "rgba(215, 227, 244, 0)");
+			// Line chart
+			new Chart(document.getElementById("chartjs-dashboard-line"), {
+				type: "line",
+				data: {
+					labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+					datasets: [{
+						label: "Sales ($)",
+						fill: true,
+						backgroundColor: gradient,
+						borderColor: window.theme.primary,
+						data: [
+							2115,
+							1562,
+							1584,
+							1892,
+							1587,
+							1923,
+							2566,
+							2448,
+							2805,
+							3438,
+							2917,
+							3327
+						]
+					}]
+				},
+				options: {
+					maintainAspectRatio: false,
+					legend: {
+						display: false
+					},
+					tooltips: {
+						intersect: false
+					},
+					hover: {
+						intersect: true
+					},
+					plugins: {
+						filler: {
+							propagate: false
+						}
+					},
+					scales: {
+						xAxes: [{
+							reverse: true,
+							gridLines: {
+								color: "rgba(0,0,0,0.0)"
+							}
+						}],
+						yAxes: [{
+							ticks: {
+								stepSize: 1000
+							},
+							display: true,
+							borderDash: [3, 3],
+							gridLines: {
+								color: "rgba(0,0,0,0.0)"
+							}
+						}]
+					}
+				}
+			});
+		});
+	</script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			// Pie chart
+			new Chart(document.getElementById("chartjs-dashboard-pie"), {
+				type: "pie",
+				data: {
+					labels: ["Chrome", "Firefox", "IE"],
+					datasets: [{
+						data: [4306, 3801, 1689],
+						backgroundColor: [
+							window.theme.primary,
+							window.theme.warning,
+							window.theme.danger
+						],
+						borderWidth: 5
+					}]
+				},
+				options: {
+					responsive: !window.MSInputMethodContext,
+					maintainAspectRatio: false,
+					legend: {
+						display: false
+					},
+					cutoutPercentage: 75
+				}
+			});
+		});
+	</script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			// Bar chart
+			new Chart(document.getElementById("chartjs-dashboard-bar"), {
+				type: "bar",
+				data: {
+					labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+					datasets: [{
+						label: "This year",
+						backgroundColor: window.theme.primary,
+						borderColor: window.theme.primary,
+						hoverBackgroundColor: window.theme.primary,
+						hoverBorderColor: window.theme.primary,
+						data: [54, 67, 41, 55, 62, 45, 55, 73, 60, 76, 48, 79],
+						barPercentage: .75,
+						categoryPercentage: .5
+					}]
+				},
+				options: {
+					maintainAspectRatio: false,
+					legend: {
+						display: false
+					},
+					scales: {
+						yAxes: [{
+							gridLines: {
+								display: false
+							},
+							stacked: false,
+							ticks: {
+								stepSize: 20
+							}
+						}],
+						xAxes: [{
+							stacked: false,
+							gridLines: {
+								color: "transparent"
+							}
+						}]
+					}
+				}
+			});
+		});
+	</script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			var markers = [{
+					coords: [31.230391, 121.473701],
+					name: "Shanghai"
+				},
+				{
+					coords: [28.704060, 77.102493],
+					name: "Delhi"
+				},
+				{
+					coords: [6.524379, 3.379206],
+					name: "Lagos"
+				},
+				{
+					coords: [35.689487, 139.691711],
+					name: "Tokyo"
+				},
+				{
+					coords: [23.129110, 113.264381],
+					name: "Guangzhou"
+				},
+				{
+					coords: [40.7127837, -74.0059413],
+					name: "New York"
+				},
+				{
+					coords: [34.052235, -118.243683],
+					name: "Los Angeles"
+				},
+				{
+					coords: [41.878113, -87.629799],
+					name: "Chicago"
+				},
+				{
+					coords: [51.507351, -0.127758],
+					name: "London"
+				},
+				{
+					coords: [40.416775, -3.703790],
+					name: "Madrid "
+				}
+			];
+			var map = new jsVectorMap({
+				map: "world",
+				selector: "#world_map",
+				zoomButtons: true,
+				markers: markers,
+				markerStyle: {
+					initial: {
+						r: 9,
+						strokeWidth: 7,
+						stokeOpacity: .4,
+						fill: window.theme.primary
+					},
+					hover: {
+						fill: window.theme.primary,
+						stroke: window.theme.primary
+					}
+				},
+				zoomOnScroll: false
+			});
+			window.addEventListener("resize", () => {
+				map.updateSize();
+			});
+		});
+	</script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			var date = new Date(Date.now() - 5 * 24 * 60 * 60 * 1000);
+			var defaultDate = date.getUTCFullYear() + "-" + (date.getUTCMonth() + 1) + "-" + date.getUTCDate();
+			document.getElementById("datetimepicker-dashboard").flatpickr({
+				inline: true,
+				prevArrow: "<span title=\"Previous month\">&laquo;</span>",
+				nextArrow: "<span title=\"Next month\">&raquo;</span>",
+				defaultDate: defaultDate
+			});
+		});
+	</script>
+	<script>
+		function openCF(evt, CallFlow) {
+		  var i, tabcontent, tablinks;
+		  tabcontent = document.getElementsByClassName("tabcontent");
+		  for (i = 0; i < tabcontent.length; i++) {
+			tabcontent[i].style.display = "none";
+		  }
+		  tablinks = document.getElementsByClassName("tablinks");
+		  for (i = 0; i < tablinks.length; i++) {
+			tablinks[i].className = tablinks[i].className.replace(" active", "");
+		  }
+		  document.getElementById(CallFlow).style.display = "block";
+		  evt.currentTarget.className += " active";
+		}
+	</script>
+</body>
+
+</html>
