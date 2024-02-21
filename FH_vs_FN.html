@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>DHC</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="Duly Consolidated Process">
+      <meta name="author" content="">
+      <!-- site icon -->
+      <link rel="icon" href="images/logo/bg_logo.png" type="image/png" />
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="css/bootstrap.min.css" />
+      <!-- site css -->
+      <link rel="stylesheet" href="style.css" />
+      <!-- responsive css -->
+      <link rel="stylesheet" href="css/responsive.css" />
+      <!-- color css -->
+      <link rel="stylesheet" href="css/colors.css" />
+      <!-- select bootstrap -->
+      <link rel="stylesheet" href="css/bootstrap-select.css" />
+      <!-- scrollbar css -->
+      <link rel="stylesheet" href="css/perfect-scrollbar.css" />
+      <!-- custom css -->
+      <link rel="stylesheet" href="css/custom.css" />
+      
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/dataTables.bootstrap5.min.css">
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.0.js"></script>
+      <script type="text/javascript" src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
+      <script type="text/javascript" src="https://cdn.datatables.net/1.13.7/js/dataTables.bootstrap5.min.js"></script>
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+
+        <style>
+        .column {
+        float: left;
+        font-size: 16px;
+	    color: black;
+        }
+        .row_2:after {
+        content: "";
+        display: table;
+        clear: both;
+        }
+        .row{
+        text-align: justify;
+        }
+        .modal {
+		display: none; /* Hidden by default */
+		position: fixed; /* Stay in place */
+		z-index: 1; /* Sit on top */
+		padding-top: 100px; /* Location of the box */
+		left: 0;
+		top: 0;
+		width: 100%; /* Full width */
+		height: 100%; /* Full height */
+		overflow: auto; /* Enable scroll if needed */
+		background-color: rgb(0,0,0); /* Fallback color */
+		background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+		}
+		.modal-content {
+		background-color: #fefefe;
+		margin: auto;
+		padding: 20px;
+		border: 1px solid #888;
+		width: 30%;
+		}
+		.close {
+		color: #aaaaaa;
+		float: right;
+		font-size: 28px;
+		font-weight: bold;
+		}
+		.close:hover,
+		.close:focus {
+		color: #000;
+		text-decoration: none;
+		cursor: pointer;
+		}
+		#myBtn {
+		background-color: orange;
+		border: none;
+        border-radius: 4px;
+		color: black;
+		padding: 15px 32px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 16px;
+		margin: 4px 2px;
+		cursor: pointer;
+		font-weight: bold;
+		}
+        </style>
+      
+   </head>
+   <body class="dashboard dashboard_1">
+      <div class="full_container">
+         <div class="inner_container">
+            <!-- Sidebar  -->
+            <nav id="sidebar">
+               <div class="sidebar_blog_1">
+                  <div class="sidebar-header">
+                     <div class="logo_section">
+                        <a href="index.html"><img class="logo_icon img-responsive" src="images/logo/dhc_logo.png"/></a>
+                     </div>
+                  </div>
+                  <div class="sidebar_user_info">
+                     <div class="icon_setting"></div>
+                     <div class="user_profle_side">
+                        <span class="align-middle"><img src="images/logo/duly_white_logo.png" width="140px" height="50px"/></span>
+                     </div>
+                  </div>
+               </div>
+               <div class="sidebar_blog_2">
+                  <h4>General</h4>
+                  <ul class="list-unstyled components">
+                     <li class="active">
+                        <a href="index.html"><i class="fa fa-dashboard yellow_color"></i> <span>Dashboard</span></a>
+                     </li>
+                     <li>
+                        <a href="#element" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-comment purple_color"></i> <span>Call Flow Tip Sheet</span></a>
+                        <ul class="collapse list-unstyled" id="element">
+                           <li><a href="inbound_callflow.html">> <span>Inbound Call Flow</span></a></li>
+                           <li><a href="payment_collection_rebuttals.html">> <span>Payment Collection Rebuttals</span></a></li>
+                           <li><a href="payment_arrangement.html">> <span>Offering Payment <br> Arrangement</span></a></li>
+                           <li><a href="covid_intervention.html">> <span>Covid Intervention <br> Claim Script</span></a></li>
+                           <li><a href="gfe_spiel.html">> <span>GFE Spiel</span></a></li>
+                           <li><a href="preventive_vs_office_visit.html">> <span>Preventive vs. Office Visit</span></a></li>
+                           <li><a href="settlement_payments.html">> <span>Settlement Payments</span></a></li>
+                           <li><a href="escalation_call_process.html">> <span>Escalation Call Process</span></a></li>
+                           <li><a href="coding_guidelines.html">> <span>Coding Guidelines <br> for Screening</span></a></li>
+                        </ul>
+                     </li>
+                     <li><a href="abbreviations.html"><i class="fa fa-object-group blue2_color"></i> <span>Abbreviations</span></a></li>
+                     <li><a href="bad_debt_suspension.html"><i class="fa fa-eye-slash yellow_color"></i> <span>Bad Debt Suspension</span></a></li>
+                     <li><a href="bankruptcy.html"><i class="fa fa-filter purple_color2"></i> <span>Bankruptcy</span></a></li>
+                     <li><a href="billing_process.html"><i class="fa fa-gavel red_color"></i> <span>Billing Process</span></a></li>
+                     <li><a href="callback_process.html"><i class="fa fa-globe green_color"></i> <span>Callback Process</span></a></li>
+                     <li><a href="coding.html"><i class="fa fa-keyboard-o blue1_color"></i> <span>Coding</span></a></li>
+                     <li><a href="CRM_routing.html"><i class="fa fa-area-chart orange"></i> <span>CRM Routing Pools</span></a></li>
+
+                     <li><a href="divorce.html"><i class="fa fa-bullhorn blue2_color"></i> <span>Divorce</span></a></li>
+                     <li><a href="deceased.html"><i class="fa fa-life-ring yellow_color"></i> <span>Deceased</span></a></li>
+                     <li><a href="denials.html"><i class="fa fa-coffee purple_color2"></i> <span>Denials</span></a></li>
+                     <li><a href="duly_employee.html"><i class="fa fa-comments red_color"></i> <span>Duly Employee</span></a></li>
+
+                     <li><a href="financial_counselors.html"><i class="fa fa-envelope-square green_color"></i> <span>Financial Counselors</span></a></li>
+                     <li><a href="FH_vs_FN.html"><i class="fa fa-fire blue1_color"></i> <span>FH vs. FN</span></a></li>
+                     <li><a href="hello_world_tip_sheet.html"><i class="fa fa-flash orange"></i> <span>Hello World Tip Sheet</span></a></li>
+                     <li><a href="HIPAA_cheatsheet.html"><i class="fa fa-user blue2_color"></i> <span>HIPAA Cheat Sheet</span></a></li>
+                     <li><a href="itemized_request.html"><i class="fa fa-briefcase yellow_color"></i> <span>Itemized Request</span></a></li>
+                     <li><a href="insurance_follow_up.html"><i class="fa fa-paw purple_color2"></i> <span>Insurance Follow-up</span></a></li>
+
+                     <li><a href="Labcorp_vs_Duly.html"><i class="fa fa-trophy red_color"></i> <span>Lab Corp vs. Duly</span></a></li>
+                     <li><a href="late_patient_billing.html"><i class="fa fa-warning green_color"></i> <span>Late Patient Billing</span></a></li>
+
+                     <li><a href="missing_payment.html"><i class="fa fa-database blue1_color"></i> <span>Missing Payment</span></a></li>
+                     <li><a href="mychart.html"><i class="fa fa-external-link orange"></i> <span>My Chart</span></a></li>
+                     <li><a href="Medicare.html"><i class="fa fa-flask blue2_color"></i> <span>Medicare</span></a></li>
+                     <li><a href="NSF.html"><i class="fa fa-gears yellow_color"></i> <span>NSF</span></a></li>
+                     <li><a href="OV_coding_tool.html"><i class="fa fa-laptop purple_color2"></i> <span>Office Visit Coding Tool</span></a></li>
+
+                     <li><a href="payment_plan.html"><i class="fa fa-money red_color"></i> <span>Payment Plan</span></a></li>
+                     <li><a href="phone_number.html"><i class="fa fa-newspaper-o green_color"></i> <span>Phone Number</span></a></li>
+                     <li><a href="Plainfield.html"><i class="fa fa-pencil blue1_color"></i> <span>Plainfield SC (SA 11)</span></a></li>
+                     <li><a href="registration.html"><i class="fa fa-share-alt orange"></i> <span>Registration</span></a></li>
+                     <li><a href="refund.html"><i class="fa fa-suitcase blue2_color"></i> <span>Refund</span></a></li>
+                     <li><a href="return_mail_vs_hipaa_breach.html"><i class="fa fa-ticket yellow_color"></i> <span>Return Mail vs. HIPAA Breach</span></a></li>
+                     
+                     <li><a href="service_areas.html"><i class="fa fa-thumb-tack purple_color2"></i> <span>Service Areas</span></a></li>
+                     <li><a href="third_party_liability.html"><i class="fa fa-soccer-ball-o red_color"></i> <span>Third Party Liability</span></a></li>
+                  </ul>
+               </div>
+            </nav>
+            <!-- end sidebar -->
+            <!-- right content -->
+            <div id="content">
+               <!-- topbar -->
+               <div class="topbar">
+                  <nav class="navbar navbar-expand-lg navbar-light">
+                     <div class="full">
+                        <button type="button" id="sidebarCollapse" class="sidebar_toggle"><i class="fa fa-bars"></i></button>
+                        <div class="logo_section">
+                           <!--<a href="index.html"><img class="img-responsive" src="" alt="#" /></a>-->
+                        </div>
+                     </div>
+                  </nav>
+               </div>
+               <!-- end topbar -->
+               <!-- dashboard inner -->
+               <!-- row -->
+               <div class="midde_cont">
+                <div class="container-fluid">
+                   <div class="row column_title">
+                      <div class="col-md-12">
+                         <div class="page_title">
+                            <h2>FH vs. FN</h2>
+                         </div>
+                      </div>
+                   </div>
+                   <!-- row -->
+                   <div class="row">
+                    <!-- invoice section -->
+                    <div class="col-md-12">
+                       <div class="white_shd full margin_bottom_30">
+                          <div class="full graph_head">
+                             <div class="heading1 margin_0">
+                                <h2 style="font-weight: bold;color: blue;"><i class="fa fa-heart" aria-hidden="true"></i> Financial Hardship vs Financial Navigation</h2>
+                             </div>
+                          </div>
+                        <div class="table_section padding_infor_info">
+                            <center>
+                                <p style="font-size: 18px;width: 65%;margin-bottom: 30px;text-align: justify;color: black;">
+                                    <span style="color: orange;"><b>Financial Hardship</b></span> is a situation in which a person cannot keep up with debt payments and bills or if the amount
+                                    that is needed to pay each month is more than the amount a person earns, due to a circumstance beyond their control while
+                                    <span style="color: orange;"><b>Financial Navigation</b></span> is designed to help patients in high-cost drug treatments by providing financial solutions
+                                    to assist with their out of pocket costs.
+                                </p>
+                            </center>
+                        </div>
+                       </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="white_shd full margin_bottom_30">
+                           <!--<div class="full graph_head">
+                              <div class="heading1 margin_0">
+                                 <h2>Table Head Colors</h2>
+                              </div>
+                           </div>-->
+                           <div class="table_section padding_infor_info">
+                            <p style="font-size: 18px;color: black;"><b>Financial Hardship Status in EPIC</b></p>
+                            <ul style="font-size: 18px;color: black;text-align: justify;">
+                                <li><span style="color: orange;font-weight: bold;">FR3</span> - no longer qualified for FH since patient has been approved previously</li>
+                                <li><span style="color: orange;font-weight: bold;">FH Approved</span> - approved for FH</li>
+                                <li><span style="color: orange;font-weight: bold;">FH Pending</span> - No balance will be sent to collections</li>
+                            </ul>
+
+                            <p style="font-size: 18px;padding-top: 11.1%;color: black;"><b>Financial Hardship - Two Weeks Additional and Letter of Support</b></p>
+							<p style="font-size: 16px;color: red;">Click the button below to open the format.</p>
+							<button id="myBtn">Open Format</button>
+
+							<div id="myModal" class="modal">
+								<!-- Modal content -->
+								<div class="modal-content">
+									<span class="close">&times;</span>
+									<div class = "modal-info">
+										<p style="color:red;font-size:18px;"><b>Two Weeks Additional</b></p>
+										<center>
+											<img src="images/layout_img/fh-2weeks.png" height="30%;">
+										</center>
+									</div>
+									<div class ="modal-info-los" style="padding-top: 35px;">
+										<p style="color:red;font-size:18px;"><b>Letter of Support</b></p>
+										<center>
+											<img src="images/layout_img/fh-los.png" height="40%;" width="80%;">
+										</center>
+									</div>
+								</div>
+							</div>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="col-md-6">
+                        <div class="white_shd full margin_bottom_30">
+                           <!--<div class="full graph_head">
+                              <div class="heading1 margin_0">
+                                 <h2>Table Head Colors</h2>
+                              </div>
+                           </div>-->
+                           <div class="table_section padding_infor_info">
+                            <p style="font-size: 18px;color: #000;"><b>Financial Navigation Status in EPIC</b></p>
+                            <ul style="font-size: 18px;text-align: justify;color: #000;">
+                                <li style="padding-bottom: 15px;"><span style="color: orange;font-weight: bold;">FN Enrolled</span> - Patient is currently enrolled in a Co-Pay Program or Foundation
+                                    Assistance for a high-cost drug treatment.
+                                </li>
+                                <li><span style="color: orange;font-weight: bold;">FN Review</span> - Patient is on a high-cost drug treatment but may not qualify for a program
+                                    at this time. Assistance is based on the Drug CPT code and Dx. Foundation assistance is based on eligible funding and diagnoses.
+                                    Sometimes a patient has an eligible diagnosis but there is no funding at the time of the appointment.
+                                </li>
+                            </ul>
+
+                            <p style="font-size: 18px;margin-top: 40px;color: #000;"><b>Things to Remember for Financial Navigation:</b></p>
+                            <ul style="font-size: 18px;margin-bottom: 20px;text-align: justify;color: #000;">
+                                <li style="padding-bottom: 10px;"><b>Co-Pay Program:</b> Patients with commercial insurance who are enrolled in a Drug Manufacturer's Assistance Program.</li>
+                                <li style="padding-bottom: 10px;"><b>Foundation Assistance:</b> Patients with Government insurance (Medicare/Medicare Advantage/Medicaid and Tricare) who are enrolled in a 
+                                    Foundation providing financial assistance.
+                                </li>
+                                <li><b>PFC Billed Program Activity:</b> Patients enrolled in a copay program or foundation. Financial Navigation Team has contested the patient's
+                                    transaction and billed the appropriate program for reimbursement. Qualified Patients are eligible for a one-time discount up to 100%
+                                    on their current balance with Duly Health and Care.
+                                </li>
+                            </ul>
+                            <p style="text-align:justify;font-size:18px;color: #000;padding-top: 15px;"><span style="color:red;font-weight:bold;">Note:</span>
+                                When patient is calling regarding questions or concern for their copay assistance/program we can connect them to 
+                                <b>Financial Navigation Team : 630-432-6350</b>
+                               </p>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="col-md-12">
+                        <div class="white_shd full margin_bottom_30">
+                           <div class="full graph_head">
+                              <div class="heading1 margin_0">
+                                 <h2 style="font-weight: bold;color: black;">Financial Hardship Guidelines</h2>
+                              </div>
+                           </div>
+                         <div class="table_section padding_infor_info">
+                             <center>
+                                <p style="font-size: 18px;color: #000;font-weight: bold;">The following guidelines should be used to determine eligibility for Financial Hardship</p>
+                             </center>
+
+                             <table id="example" class="table table-striped table-bordered" style="margin-bottom: 50px;font-size: 18px;">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th style="text-align: center;width: 10%;"><b>Hardship Classification</b></th>
+                                        <th style="text-align: center;width: 18%;"><b>Eligibility</b></th>
+                                        <th style="text-align: center;width: 15%;"><b>Approval Period</b></th>
+                                        <th style="text-align: center;width: 15%;"><b>Balance Requirement</b></th>
+                                        <th style="text-align: center;width: 8%;"><b>Renewable</b></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td style="text-align: center;"><b>Standard</b></td>
+                                        <td>
+                                            Eligible patients have a balance of $250 or more total combined between service areas and have not previously been approved for hardship. 
+                                            Patient must meet the Federal poverty guidelines for approval.  Hardship is approved at 50% or 100%.
+                                        </td>
+                                        <td>
+                                            <p style="font-size: 18px;color: #000;"><b>Previous Charges Only</b></p>
+                                            Charges pending insurance or bad-debt will not be considered for Hardship Approval.
+                                        </td>
+                                        <td>Balance must be greater than $250</td>
+                                        <td style="text-align: center;">
+                                            <p style="font-size: 18px;color: #000;">No</p>
+                                            Accounts that have been previously approved for FH have an <b>FR3</b> status on them.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: center;"><b>ONCOLOGY</b></td>
+                                        <td>Eligible patients are currently in active treatment for chemotherapy and/or Radiation Therapy</td>
+                                        <td>
+                                            <p style="font-size: 18px;color: #000;"><b>6 Months</b></p>
+                                            Charges pending bad-debt are not considered part of the approval.
+                                        </td>
+                                        <td>No Minimum Balance Requirement </td>
+                                        <td style="text-align: center;">Yes</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: center;"><b>BCC</b></td>
+                                        <td>Eligible patients are currently in active treatment at a Break-Through-Care Center (Locations Listed Below)</td>
+                                        <td>
+                                            <p style="font-size: 18px;color: #000;"><b>6 Months</b></p>
+                                            Charges pending bad-debt are not considered part of the approval.
+                                        </td>
+                                        <td>No minimum Balance Requirement</td>
+                                        <td style="text-align: center;">Yes</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <p style="font-size: 18px;color: #000;font-weight: bold;">Department/Locations:</p>
+							<p style="font-size: 18px;color: #000;font-weight: bold;">Radiation Oncology:</p>
+
+                            <table id="example" class="table table-striped table-bordered" style="margin-bottom: 50px;font-size: 18px;">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th style="text-align: center;width: 18%;"><b>Clinic</b></th>
+                                        <th style="text-align: center;width: 18%;"><b>Physician</b></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <b>Lisle Rad/Onc</b> <br>
+                                            430 Warrenville Road <br>
+                                            Lisle, IL 60532
+                                        </td>
+                                        <td>
+                                            Baker, Katherine F MD <br>
+                                            Moran, Brian J MD <br>
+                                            Shah, Anand P MD
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <p style="font-size: 18px;color: #000;font-weight: bold;">Oncology Infusion:</p>
+
+                            <table id="example" class="table table-striped table-bordered" style="margin-bottom: 50px;font-size: 18px;">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th style="text-align: center;width: 18%;" colspan="5"><b>Clinic/Department – Must be combined with Cancer Dx</b></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td style="text-align: center;">
+                                            <b>Clay Infusion</b> <br>
+                                            40 S Clay Street <br>
+                                            Hinsdale, Illinois 60521
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: center;">
+                                            <b>Lisle Infusion</b> <br>
+                                            430 Warrenville Rd <br>
+                                            Lisle, IL 60532 <br>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: center;">
+                                            <b>Joliet Infusion</b> <br>
+                                            2100 Glenwood Ave <br>
+                                            Joliet, IL 60435
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: center;">
+                                            <b>TP Infusion</b> <br>
+                                            17495 S LaGrange Rd <br>
+                                            Tinley Park, IL 60487
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: center;">
+                                            <b>Win Infusion</b> <br>
+                                            25 N Winfield Rd <br>
+                                            Winfield, IL 60190
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <p style="font-size: 18px;color: #000;font-weight: bold;">BCC Locations/Physicians:</p>
+
+                            <table id="example" class="table table-striped table-bordered" style="margin-bottom: 50px;font-size: 18px;">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th style="text-align: center;width: 18%;"><b>Clinic</b></th>
+                                        <th style="text-align: center;width: 18%;"><b>Physician</b></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <b>Joliet BCC</b> <br>
+                                            2100 Glenwood Ave <br>
+                                            Joliet, IL 60435
+                                        </td>
+                                        <td>
+                                            Szafranski, Karl MD
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <b>Lisle BCC</b> <br>
+                                            430 Warrenville Road <br>
+                                            Lisle, IL 60532
+                                        </td>
+                                        <td>Krouse, Richard A MD</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <b>Springbrook BCC</b> <br>
+                                            1964 Springbrook Square Dr <br>
+                                            Naperville, IL 60564
+                                        </td>
+                                        <td>
+                                            O’Leary, Brian MD <br>
+                                            Otto, Kimberly RN, FNP-BC
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <b>WTN BCC</b> <br>
+                                            150 E Willow Ave <br>
+                                            Wheaton, IL 60187
+                                        </td>
+                                        <td>
+                                            Philip, Mathew S MD <br>
+                                            Otto, Kimberly RN, FNP-BC
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                         </div>
+                        </div>
+                     </div>
+
+                     <div class="col-md-12">
+                        <div class="white_shd full margin_bottom_30">
+                           <div class="full graph_head">
+                              <div class="heading1 margin_0">
+                                 <h2 style="font-weight: bold;color: black;">Financial Hardship Screening</h2>
+                              </div>
+                           </div>
+                         <div class="table_section padding_infor_info">
+                            <p style="font-size: 18px;color: #000;text-align: justify;">
+                                Prior to offering a patient financial hardship please verify the patient’s income does not exceed federal poverty guidelines.  The guidelines below are for the standard hardship.  
+                                Oncology/BCC approvals are based on the same FPL but have a sliding % of approval.  Patient’s income cannot exceed 400% of the Federal Poverty Guidelines.
+                            </p>
+                            <center><img src="images/layout_img/fh-table1.PNG" style="height:30%;width:50%;padding-bottom:50px;"></center>
+							<center><img src="images/layout_img/fh-table2.PNG" style="height:30%;width:100%;padding-bottom:40px"></center>
+
+                            <p style="font-size: 18px;color: #000;"><b>Documents required for approval:</b></p>
+							<ul style="font-size: 18px;color: #000;">
+								<li><i class="fa fa-circle"></i>Signed application</li>
+								<li>
+									<i class="fa fa-circle"></i>Proof of Income
+									<ul>
+										<li><i class="fa fa-circle-o"></i>Last 3 Paychecks</li>
+										<li><i class="fa fa-circle-o"></i>Unemployement Benefit Summary Letter </li>
+										<li><i class="fa fa-circle-o"></i>Disability or Social Security Letter </li>
+										<li><i class="fa fa-circle-o"></i>Last 3 Bank Statements</li>
+									</ul>
+								</li>
+								<li>
+									<i class="fa fa-circle"></i>Proof of Dependencies
+									<ul>
+										<li><i class="fa fa-circle-o"></i>Most Recent Tax Return Documents (Top 2 pages required)</li>
+									</ul>
+								</li>
+								<li><i class="fa fa-circle"></i>Letter/Explanation for Request</li>
+								</ul>
+								<p style="font-size: 18px;color: #000;">
+									Failure to produce the required documents by the date on the application will be considered incomplete, and balance may be subject to collections review.
+								</p>
+                                <p style="font-size: 18px;text-align: justify;color: #000;">
+                                    <b>Exclusions:</b> <br>
+                                    Patients are not eligible for hardship if charges are considered Cosmetic, Durable Medical Equipment, or part of a third-party claim (Workers Compensation/Auto-Accident).  
+                                    Additionally, any charges that have been sent to a third-party agency for collections are not eligible for Financial Hardship.  
+                                    Patients who have been previously approved and do not meet the criteria for BCC or Oncology Hardship programs are not eligible to reapply.  
+                                    DuPage Medical Group Financial Hardship is a once in a lifetime offer.
+                                </p>
+                         </div>
+                        </div>
+                     </div>
+
+                 </div>
+                   <!-- footer -->
+                   <div class="container-fluid">
+                      <div class="footer" style="background-color: #FF5722;">
+                        <p><img src="images/logo/optum_white_logo.png" width="150px;" height="50px;"/></p>
+                      </div>
+                   </div>
+                </div>
+                <!-- end dashboard inner -->
+             </div>
+                   <div class="col-md-2"></div>
+                </div>
+                <!-- end row -->
+             </div>
+            </div>
+         </div>
+      </div>
+      <!-- jQuery -->
+      <script>
+		// Get the modal
+		var modal = document.getElementById("myModal");
+		
+		// Get the button that opens the modal
+		var btn = document.getElementById("myBtn");
+		
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+		
+		// When the user clicks the button, open the modal 
+		btn.onclick = function() {
+		  modal.style.display = "block";
+		}
+		
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function() {
+		  modal.style.display = "none";
+		}
+		
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function(event) {
+		  if (event.target == modal) {
+			modal.style.display = "none";
+		  }
+		}
+		</script>
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <!-- wow animation -->
+      <script src="js/animate.js"></script>
+      <!-- select country -->
+      <script src="js/bootstrap-select.js"></script>
+      <!-- owl carousel -->
+      <script src="js/owl.carousel.js"></script> 
+      <!-- chart js -->
+      <script src="js/Chart.min.js"></script>
+      <script src="js/Chart.bundle.min.js"></script>
+      <script src="js/utils.js"></script>
+      <script src="js/analyser.js"></script>
+      <!-- nice scrollbar -->
+      <script src="js/perfect-scrollbar.min.js"></script>
+      <script>
+         var ps = new PerfectScrollbar('#sidebar');
+      </script>
+      <!-- custom js -->
+      <script src="js/chart_custom_style1.js"></script>
+      <script src="js/custom.js"></script>
+   </body>
+</html>

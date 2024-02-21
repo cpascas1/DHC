@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>DHC</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="Duly Consolidated Process">
+      <meta name="author" content="">
+      <!-- site icon -->
+      <link rel="icon" href="images/logo/bg_logo.png" type="image/png" />
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="css/bootstrap.min.css" />
+      <!-- site css -->
+      <link rel="stylesheet" href="style.css" />
+      <!-- responsive css -->
+      <link rel="stylesheet" href="css/responsive.css" />
+      <!-- color css -->
+      <link rel="stylesheet" href="css/colors.css" />
+      <!-- select bootstrap -->
+      <link rel="stylesheet" href="css/bootstrap-select.css" />
+      <!-- scrollbar css -->
+      <link rel="stylesheet" href="css/perfect-scrollbar.css" />
+      <!-- custom css -->
+      <link rel="stylesheet" href="css/custom.css" />
+      
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/dataTables.bootstrap5.min.css">
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.0.js"></script>
+      <script type="text/javascript" src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
+      <script type="text/javascript" src="https://cdn.datatables.net/1.13.7/js/dataTables.bootstrap5.min.js"></script>
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+
+        <style>
+        .column {
+        float: left;
+        width: 35%;
+        }
+        .row_2:after {
+        content: "";
+        display: table;
+        clear: both;
+        }
+        .row_2{
+        font-size: 16px;
+        padding-bottom: 30px;
+        }
+        #example{
+        margin-left: auto;
+        margin-right: auto;
+        width: 77%;
+        font-size: 18px;
+        }
+        </style>
+      
+   </head>
+   <body class="dashboard dashboard_1">
+      <div class="full_container">
+         <div class="inner_container">
+            <!-- Sidebar  -->
+            <nav id="sidebar">
+               <div class="sidebar_blog_1">
+                  <div class="sidebar-header">
+                     <div class="logo_section">
+                        <a href="index.html"><img class="logo_icon img-responsive" src="images/logo/dhc_logo.png"/></a>
+                     </div>
+                  </div>
+                  <div class="sidebar_user_info">
+                     <div class="icon_setting"></div>
+                     <div class="user_profle_side">
+                        <span class="align-middle"><img src="images/logo/duly_white_logo.png" width="140px" height="50px"/></span>
+                     </div>
+                  </div>
+               </div>
+               <div class="sidebar_blog_2">
+                  <h4>General</h4>
+                  <ul class="list-unstyled components">
+                     <li class="active">
+                        <a href="index.html"><i class="fa fa-dashboard yellow_color"></i> <span>Dashboard</span></a>
+                     </li>
+                     <li>
+                        <a href="#element" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-comment purple_color"></i> <span>Call Flow Tip Sheet</span></a>
+                        <ul class="collapse list-unstyled" id="element">
+                           <li><a href="inbound_callflow.html">> <span>Inbound Call Flow</span></a></li>
+                           <li><a href="payment_collection_rebuttals.html">> <span>Payment Collection Rebuttals</span></a></li>
+                           <li><a href="payment_arrangement.html">> <span>Offering Payment <br> Arrangement</span></a></li>
+                           <li><a href="covid_intervention.html">> <span>Covid Intervention <br> Claim Script</span></a></li>
+                           <li><a href="gfe_spiel.html">> <span>GFE Spiel</span></a></li>
+                           <li><a href="preventive_vs_office_visit.html">> <span>Preventive vs. Office Visit</span></a></li>
+                           <li><a href="settlement_payments.html">> <span>Settlement Payments</span></a></li>
+                           <li><a href="escalation_call_process.html">> <span>Escalation Call Process</span></a></li>
+                           <li><a href="coding_guidelines.html">> <span>Coding Guidelines <br> for Screening</span></a></li>
+                        </ul>
+                     </li>
+                     <li><a href="abbreviations.html"><i class="fa fa-object-group blue2_color"></i> <span>Abbreviations</span></a></li>
+                     <li><a href="bad_debt_suspension.html"><i class="fa fa-eye-slash yellow_color"></i> <span>Bad Debt Suspension</span></a></li>
+                     <li><a href="bankruptcy.html"><i class="fa fa-filter purple_color2"></i> <span>Bankruptcy</span></a></li>
+                     <li><a href="billing_process.html"><i class="fa fa-gavel red_color"></i> <span>Billing Process</span></a></li>
+                     <li><a href="callback_process.html"><i class="fa fa-globe green_color"></i> <span>Callback Process</span></a></li>
+                     <li><a href="coding.html"><i class="fa fa-keyboard-o blue1_color"></i> <span>Coding</span></a></li>
+                     <li><a href="CRM_routing.html"><i class="fa fa-area-chart orange"></i> <span>CRM Routing Pools</span></a></li>
+
+                     <li><a href="divorce.html"><i class="fa fa-bullhorn blue2_color"></i> <span>Divorce</span></a></li>
+                     <li><a href="deceased.html"><i class="fa fa-life-ring yellow_color"></i> <span>Deceased</span></a></li>
+                     <li><a href="denials.html"><i class="fa fa-coffee purple_color2"></i> <span>Denials</span></a></li>
+                     <li><a href="duly_employee.html"><i class="fa fa-comments red_color"></i> <span>Duly Employee</span></a></li>
+
+                     <li><a href="financial_counselors.html"><i class="fa fa-envelope-square green_color"></i> <span>Financial Counselors</span></a></li>
+                     <li><a href="FH_vs_FN.html"><i class="fa fa-fire blue1_color"></i> <span>FH vs. FN</span></a></li>
+                     <li><a href="hello_world_tip_sheet.html"><i class="fa fa-flash orange"></i> <span>Hello World Tip Sheet</span></a></li>
+                     <li><a href="HIPAA_cheatsheet.html"><i class="fa fa-user blue2_color"></i> <span>HIPAA Cheat Sheet</span></a></li>
+                     <li><a href="itemized_request.html"><i class="fa fa-briefcase yellow_color"></i> <span>Itemized Request</span></a></li>
+                     <li><a href="insurance_follow_up.html"><i class="fa fa-paw purple_color2"></i> <span>Insurance Follow-up</span></a></li>
+
+                     <li><a href="Labcorp_vs_Duly.html"><i class="fa fa-trophy red_color"></i> <span>Lab Corp vs. Duly</span></a></li>
+                     <li><a href="late_patient_billing.html"><i class="fa fa-warning green_color"></i> <span>Late Patient Billing</span></a></li>
+
+                     <li><a href="missing_payment.html"><i class="fa fa-database blue1_color"></i> <span>Missing Payment</span></a></li>
+                     <li><a href="mychart.html"><i class="fa fa-external-link orange"></i> <span>My Chart</span></a></li>
+                     <li><a href="Medicare.html"><i class="fa fa-flask blue2_color"></i> <span>Medicare</span></a></li>
+                     <li><a href="NSF.html"><i class="fa fa-gears yellow_color"></i> <span>NSF</span></a></li>
+                     <li><a href="OV_coding_tool.html"><i class="fa fa-laptop purple_color2"></i> <span>Office Visit Coding Tool</span></a></li>
+
+                     <li><a href="payment_plan.html"><i class="fa fa-money red_color"></i> <span>Payment Plan</span></a></li>
+                     <li><a href="phone_number.html"><i class="fa fa-newspaper-o green_color"></i> <span>Phone Number</span></a></li>
+                     <li><a href="Plainfield.html"><i class="fa fa-pencil blue1_color"></i> <span>Plainfield SC (SA 11)</span></a></li>
+                     <li><a href="registration.html"><i class="fa fa-share-alt orange"></i> <span>Registration</span></a></li>
+                     <li><a href="refund.html"><i class="fa fa-suitcase blue2_color"></i> <span>Refund</span></a></li>
+                     <li><a href="return_mail_vs_hipaa_breach.html"><i class="fa fa-ticket yellow_color"></i> <span>Return Mail vs. HIPAA Breach</span></a></li>
+                     
+                     <li><a href="service_areas.html"><i class="fa fa-thumb-tack purple_color2"></i> <span>Service Areas</span></a></li>
+                     <li><a href="third_party_liability.html"><i class="fa fa-soccer-ball-o red_color"></i> <span>Third Party Liability</span></a></li>
+                  </ul>
+               </div>
+            </nav>
+            <!-- end sidebar -->
+            <!-- right content -->
+            <div id="content">
+               <!-- topbar -->
+               <div class="topbar">
+                  <nav class="navbar navbar-expand-lg navbar-light">
+                     <div class="full">
+                        <button type="button" id="sidebarCollapse" class="sidebar_toggle"><i class="fa fa-bars"></i></button>
+                        <div class="logo_section">
+                           <!--<a href="index.html"><img class="img-responsive" src="" alt="#" /></a>-->
+                        </div>
+                     </div>
+                  </nav>
+               </div>
+               <!-- end topbar -->
+               <!-- dashboard inner -->
+               <!-- row -->
+               <div class="midde_cont">
+                <div class="container-fluid">
+                   <div class="row column_title">
+                      <div class="col-md-12">
+                         <div class="page_title">
+                            <h2>Refund</h2>
+                         </div>
+                      </div>
+                   </div>
+                   <!-- row -->
+                   <div class="row">
+                    <!-- invoice section -->
+                    <div class="col-md-6">
+                       <div class="white_shd full margin_bottom_30">
+                          <div class="full graph_head">
+                             <div class="heading1 margin_0">
+                                <h2 style="font-weight: bold;color: green;"><i class="fa fa-puzzle-piece" aria-hidden="true"></i> Refund</h2>
+                             </div>
+                          </div>
+                        <div class="table_section padding_infor_info">
+                            <p style="font-weight:bold;font-size:18px;color: black;">
+                                <span style="color:red;">Basic rule for refund:</span> Patient is eligible if there's no self-pay and insurance pending on the account.
+                            </p>
+                            <p style="font-weight:bold;font-size:18px;color: black;">Example: <img src="images/layout_img/refund1.PNG" width="220" height="80"></p>
+                            <p style="font-weight:bold;font-size:18px;color: black;">How to request the refund in Epic:</p>
+                            <ol style="font-size:18px;color: black;text-align: justify;">
+                                <li>Go to Prof Tx Inquiry and look for undistributed credits.</li>
+                                <li>Select the amount and right click. Under actions, select Refund.</li>
+                                <img src="images/layout_img/refund2.PNG" width="630" height="200">
+                                <li style="padding-top:10px;">A pop-up will appear. For <span style="font-weight:bold;"><i>credit card refund</i></span>, please select
+                                AC214 - REFUND CREDIT CARD [AC214] as the refund code. For <span style="font-weight:bold;"><i>check refund</i></span>,
+                                select AC708 - REFUND PATIENT [AC708].
+                                <li>Make sure the amount is correct and method of payment used is accurate.</li>
+                                <img src="images/layout_img/refund3.PNG" width="400" height="200">
+                            </ol>
+                            <p style="font-weight:bold;font-size:18px;padding-top:60px;text-align:justify;color: black;">
+                                <span style="color:red;">Reminders:</span> <br>
+                                Again, you can request the refund in Epic directly if patient is eligible and doesn't have any current self-pay balance and insurance
+                                pending amounts. If the patient insist for a refund and has a balance or pending amount on the account kindly reach out to your TLs/SMEs
+                                to have it reviewed but do not promise or guarantee anything to the patient. <br>
+                                If the patient calls back after 14 days and refund has been initiated by the first inbound agent but still under pending refund status
+                                kindly create CRM to Credit Balance pool for the escalation. If the patient calls back again, you can reroute the existing CRM to
+                                Credit Balance - Supervisor pool as the second escalation.
+                            </p>
+                        </div>
+                       </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="white_shd full margin_bottom_30">
+                         <div class="table_section padding_infor_info">
+                            <ol type="1" start="5" style="font-size:18px;color: black;">
+                                <li>Select the appropriate Reason and click Accept.</li>
+                            </ol>
+                            <p style="font-size:18px;color: black;">Please see Credit balance Scope and sample scenarios:</p>
+                            <p style="font-size:18px;padding-top:10px;color: black;">Credit Balance Scope</p>
+                            <table class="table table-bordered" style="color:black;font-size: 18px;">
+                                <thead>
+                                    <tr>
+                                        <th style="font-weight:bold;">Out of Scope</th>
+                                        <th style="font-weight:bold;">In Scope</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Create/Monitor/Cancel Payment Plans</td>
+                                        <td>Review/refund self-pay credits</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Approve/Review Write Off Adjustments</td>
+                                        <td>Review/refund insurance credits</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Review reasons for self-pay balances</td>
+                                        <td>Review Refund Adjustment requests</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bill/Re-Bill/Corrected Claims</td>
+                                        <td>Refund Check Status</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Corrected Coding</td>
+                                        <td>Void/Reissue Refund Checks</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>Decline a refund</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>Decline and apply credit</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <p style="font-size:18px;padding-top:10px;color:black;">Credit Balance CRM Scenarios</p>
+                            <table class="table table-bordered" style="color:black;font-size: 18px;">
+                                <thead>
+                                    <tr>
+                                        <th style="font-weight:bold;">Scenario</th>
+                                        <th style="font-weight:bold;">Next Action</th>
+                                        <th style="font-weight:bold;">Escalation Required?</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Refund is needing approval & involves BBB Compliant</td>
+                                        <td>Open CRM (CRM OPTUM CREDIT BALANCE)</td>
+                                        <td>CRM OPTUM CREDIT BALANCE - SUPERVISOR</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Refund is needing approval</td>
+                                        <td>No need to open CRM</td>
+                                        <td>NONE</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Funds were over collected on patient's card (intended amount over collected by Duly/Optum)</td>
+                                        <td>Open CRM (CRM OPTUM CREDIT BALANCE)</td>
+                                        <td>NONE</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Patient paid on incorrect card & requested a refund</td>
+                                        <td>
+                                            - Require patient to make a payment with intended card before a refund can be processed to the original card <br>
+                                            - Open CRM (CRM OPTUM CREDIT BALANCE)
+                                        </td>
+                                        <td>NONE</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Patient call and request check to be reissued <br> (Example: Stale date/lost/damaged)</td>
+                                        <td>Open CRM (CRM OPTUM CREDIT BALANCE)</td>
+                                        <td>NONE</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                         </div>
+                        </div>
+                     </div>
+                 </div>
+                   <!-- footer -->
+                   <div class="container-fluid">
+                      <div class="footer" style="background-color: #FF5722;">
+                        <p><img src="images/logo/optum_white_logo.png" width="150px;" height="50px;"/></p>
+                      </div>
+                   </div>
+                </div>
+                <!-- end dashboard inner -->
+             </div>
+                   <div class="col-md-2"></div>
+                </div>
+                <!-- end row -->
+             </div>
+            </div>
+         </div>
+      </div>
+      <!-- jQuery -->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <!-- wow animation -->
+      <script src="js/animate.js"></script>
+      <!-- select country -->
+      <script src="js/bootstrap-select.js"></script>
+      <!-- owl carousel -->
+      <script src="js/owl.carousel.js"></script> 
+      <!-- chart js -->
+      <script src="js/Chart.min.js"></script>
+      <script src="js/Chart.bundle.min.js"></script>
+      <script src="js/utils.js"></script>
+      <script src="js/analyser.js"></script>
+      <!-- nice scrollbar -->
+      <script src="js/perfect-scrollbar.min.js"></script>
+      <script>
+         var ps = new PerfectScrollbar('#sidebar');
+      </script>
+      <!-- custom js -->
+      <script src="js/chart_custom_style1.js"></script>
+      <script src="js/custom.js"></script>
+   </body>
+</html>
